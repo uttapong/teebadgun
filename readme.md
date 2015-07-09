@@ -8,6 +8,6 @@ A Teebadgun Website is an web application build on Laravel framwork. An main obj
 Uttapong Ruangrit
 
 ## Demo
-Currently available at http://www.teebadgun.com
+Currently availabled at http://www.teebadgun.com
 
 
