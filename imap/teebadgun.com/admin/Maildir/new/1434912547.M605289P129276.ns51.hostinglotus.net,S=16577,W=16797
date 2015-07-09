@@ -1,0 +1,220 @@
+Return-Path: <zahr.hami@gmail.com>
+Delivered-To: admin@teebadgun.com
+Received: from ns51.hostinglotus.net
+	by ns51.hostinglotus.net (Dovecot) with LMTP id EUxDGiMHh1X8+AEAXfJA/w
+	for <admin@teebadgun.com>; Mon, 22 Jun 2015 01:49:07 +0700
+Return-path: <zahr.hami@gmail.com>
+Received: from web101001.mail.kks.yahoo.co.jp ([183.79.100.165])
+	by ns51.hostinglotus.net with smtp (Exim 4.85)
+	(envelope-from <zahr.hami@gmail.com>)
+	id 1Z6kIk-000Xcv-MS
+	for admin@teebadgun.com; Mon, 22 Jun 2015 01:49:07 +0700
+Received: (qmail 9871 invoked by uid 60001); 21 Jun 2015 18:50:37 -0000
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws;
+  s=yj20050223; d=yahoo.co.jp;
+  h=Message-ID:X-YMail-OSG:Received:X-RocketYMMF:X-Mailer:X-YMail-JAS:Sender:References:Date:From:Reply-To:Subject:To:MIME-Version:Content-Type;
+  b=id8W2fG2mZbqWhNzz91yo1sOX5t8EHYJzEY44gDATe8zS0TQT6wm0o/DCp2HyTeIZlesz+aBqA0tA1XMzk6VHoc1yn7bASjhciNqtfCjOxGQist/HJ8VWf/IUDDBk4ta  ;
+Message-ID: <876977.79131.qm@web101001.mail.kks.yahoo.co.jp>
+X-YMail-OSG: PV4SUiAVM1lbqWNuLr3V94p4eVbCXcdG0GlBzWPvX4GmTDkwzCbwuRNibmoci5PTP0b3NFNXCjTWMxOODyPWb68AFKFRp4OHbzAd1UBYsWMKBuHaajetL6UBB40PJilzj2WHWrABg3i6AcDB9fKVWL6UV7fiBgD7YnZ6kowluaTTwqXaNrkH6W.8j.UPKjgppMSjJWp2zcCygtMJ2uo2qi0TUbgUkZZjpbFTBWC8Ll7n6KVnY80BpeNqscXwSh6B6bftsb2JUqI5VRQ.HtIOi3jcuqpkpxlPPvaCgrQkZHLDqbKzBCHx5I3CkekhzsLnv3oV9_SJ51jIYhFoY3E6MT08sU32MR0NG8GFlMWnyqhqmODBva8zBy_h5JQ_Ff0su_1TPvAJP0lbrhZQsjIq6ZTuPWFoQf18XI0VGjy84jzyphwo1zfkpoB76vUwKn_7qJm3B4l_yubVi7.7MoWRbw7DuYq2JrsXo4CWXi1J1oKWQHtL.DXTsNiWgubWCbMQygDXnJWoo.VKy9X82aL9rgw3BHCcCwsUR5Wm6re5Z2V1JTVpcXryQuAKLWG_LcHWWbS2jtmdQHKAaB03ziKhYeFUF5eA7gtWd2IKH30059gh2Hgz0dcO7wuvnnSUbXRRrROmMPI5Ox1.dg9IjCpXzeRezAJQ3Yjp42wY4v._Aqpjr0c1RPgaVw15R56hRwOkgAqqtiIB.dW083EXuDlNPLUqg3rM07y2XujHMZQgW.tG.ddksUbwTWGp1AbJ9gSQkmE4HL5dHBt1EhAmW09OU1Kt6Z.aPrwYdupQDVaq7DS3gMg4rKsgqQiW5lS6v3vjqlz59O5LKnSp1KYPfoPhZJ8ZzuvGJd_nD7.maEuFZO4RXYJ8sw9oCNwxjx0IDYaxredSGqqPMJ49ZUciz9q4TTb54H.mBHUzLUBqxwhRXHYVlTT6sEdVQP2XrmCBfb6VXGzpuCUrAA3JjIhZqlJE2zr4Mh1fFAw4ehkfp2tXHVDyYzdvLip3MYFb8EIXR0a4bJfyK4Piq0Qts0Jm59udfWW9vnQ49_XKfGngi7kB3gmDG0Cgz_zwdT4uE9wqL.w1JOcEmYIw4EOKOYZTnrwfPFJQHYdbcnHXQ4rNl6jIZgynk.JPA9ZdtE00ZNMGvWeGgGBLWsD.ZxJTNt8QNAmDIRG9ESkewwu0E6.0x.RGXtaSEKP48YOpDuLNaJaLf47UNp_UqoNvWCWmBcgzJX.OWXIMqC1VT1c2gWu1suq.YOEICdPTtBGZG8aB6WBD8IyordCikwtXQgmNY9I7e5jqNIOJd8ycKPNBEhE2CjeeV.tCzmCXLpTvkeTYcbPsydShPpeKzEy7YeoJbMHa2zsZCjdWMMadyIKuBpyH6okEbYXQPiqovXblyjlJ5bY4q9FY4UyPOn9ahOdv6sRCbwclpdY90woKJiJREbbsXFjdS6JDNpaussJrCQct0bIYJJc3HrUoNIx_6iMRFZwABhkC_P8lr6fhyLeBs8z81tL2Khz3cPqhzPWcEXokMYGgLL3CMaLfriGZGlgLSYFmZzSAvCEac5mw5A89CKoWN.8iUO9mwQEsu2lY.StcsY0guMB_4VsJXvMfUGmNlazTB0DEAhKkWywCinQGapqoUpRwBnw2J_cxRYpuUqSl8FQeisMAAvhijW2UOhxkfT8K_z44C0WAXlK3Ox5MGieBSg--
+Received: from [66.85.148.50] by web101001.mail.kks.yahoo.co.jp via HTTP; Mon, 22 Jun 2015 03:50:37 JST
+X-RocketYMMF: arakotesasi
+X-Mailer: YahooMailWebService/0.8.111_65
+X-YMail-JAS: 8h.eHMQVM1n7Tj660VtTjYCZ57Yp1i2I5GCz.u9AT6byzV3WRcS4QTbDl3Miid1JNQCiQQ94PTupZZAWboQeU8HdVO_M2b1KtI523TzVJBocS57YNWwaCHsKpuDM5P7uotkr
+Sender: arakotesasi@yahoo.co.jp
+References: 
+Date: Mon, 22 Jun 2015 03:50:37 +0900 (JST)
+From: Zahra Hami <zahr.hami@gmail.com>
+Reply-To: Zahra Hami <zhami_1@yahoo.com>
+Subject: Reply
+To: undisclosed recipients: ;
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="0-1162704052-1434912637=:79131"
+SPFCheck: Soft Fail, 30 Spam score
+X-Spam-Score: 3.5 (+++)
+X-Spam-Report: Spam detection software, running on the system "ns51.hostinglotus.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ 
+ Content preview:  Dearest, I am Mrs Zahra Hami and I am married to Mr. Roshan
+    Hami for 19 years without a child and my husband died in just four days of
+    his illness. I am contacting you to let you know my desire to donate the
+   huge sum to charities in your country which I inherited from my late husband.
+    Due to my illness (cancer) I have been confirmed to leave for just eight
+   months by doctors, so it is my desire that this money is invested and distributed
+    to charity organizations of your choice like orphanage homes, schools, Home
+    for the homeless, Home for the elderly, hospital and many other things that
+    will be to the benefit of the less privilege. I want you to send your name
+    and address so that I start processing the affidavit that will prove you
+   the new beneficiary to the fund. Once I receive your reply confirming your
+    acceptance of the work, I will give all relevant information and swear affidavit
+    to authorize the bank release and transfer the money to you as my duly appointed
+    representative. [...] 
+ 
+ Content analysis details:   (3.5 points, 5.0 required)
+ 
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no
+                             trust
+                             [183.79.100.165 listed in list.dnswl.org]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             (zahr.hami[at]gmail.com)
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                             CUSTOM_MED
+  0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
+                             (zhami_1[at]yahoo.com)
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.2 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+                             [183.79.100.165 listed in wl.mailspike.net]
+  1.0 FREEMAIL_REPLYTO       Reply-To/From or Reply-To/body contain different
+                             freemails
+  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+  1.3 ADVANCE_FEE_4_NEW      Appears to be advance fee fraud (Nigerian 419)
+  0.0 ADVANCE_FEE_5_NEW      Appears to be advance fee fraud (Nigerian 419)
+SpamTally: Final spam score: 65
+X-Antivirus-Scanner: Clean mail though you should still use an Antivirus
+
+--0-1162704052-1434912637=:79131
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Dearest,=0A=0AI am Mrs Zahra Hami and I am married to Mr. Roshan Hami =0Afo=
+r 19 years without a child and my husband died in just four days of =0Ahis =
+illness. I am contacting you to let you know my desire to donate the=0A hug=
+e sum to charities in your country which I inherited from my late =0Ahusban=
+d. Due to my illness (cancer) I have been confirmed to leave for =0Ajust ei=
+ght months by doctors, so it is my desire that this money is =0Ainvested an=
+d distributed to charity organizations of your choice like =0Aorphanage hom=
+es, schools, Home for the homeless, Home for the elderly, =0Ahospital and m=
+any other things that will be to the benefit of the less =0Aprivilege. I wa=
+nt you=0A to send your name and address so that I start processing the affi=
+davit =0Athat will prove you the new beneficiary to the fund. Once I receiv=
+e your=0A reply confirming your acceptance of the work, I will give all rel=
+evant =0Ainformation and swear affidavit to authorize the bank release and =
+=0Atransfer the money to you as my duly appointed representative.=0A=0ARema=
+in blessed,=0AMrs. Zahra Hami=0A
+--0-1162704052-1434912637=:79131
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><div style=3D"color:; background-color:; font-family:MS PMincho=
+, serif;font-size:12pt"><div id=3D"yiv26514011"><div style=3D"font-family:M=
+S PMincho, serif;font-size:12pt;"><div id=3D"yiv26514011"><div id=3D"yiv265=
+14011yui_3_2_0_4_143490265495381" class=3D"yiv26514011yui_3_2_0_4_143490265=
+495350" style=3D"font-family:MS PMincho, serif;font-size:12pt;"><div id=3D"=
+yiv26514011"><div id=3D"yiv26514011yui_3_2_0_3_143490265495380" class=3D"yi=
+v26514011yui_3_2_0_3_143490265495351 yiv26514011yui_3_2_0_4_143490265495352=
+" style=3D"font-family:MS PMincho, serif;font-size:12pt;"><div id=3D"yiv265=
+14011"><div id=3D"yiv26514011yui_3_2_0_51_143489362112277" class=3D"yiv2651=
+4011yui_3_2_0_51_143489362112250 yiv26514011yui_3_2_0_3_143490265495353 yiv=
+26514011yui_3_2_0_4_143490265495354" style=3D"font-family:MS PMincho, serif=
+;font-size:12pt;"><div id=3D"yiv26514011"><div id=3D"yiv26514011yui_3_2_0_3=
+8_143489423839875" class=3D"yiv26514011yui_3_2_0_38_143489423839850
+ yiv26514011yui_3_2_0_51_143489362112252 yiv26514011yui_3_2_0_3_14349026549=
+5355 yiv26514011yui_3_2_0_4_143490265495356" style=3D"font-family:MS PMinch=
+o, serif;font-size:12pt;"><div id=3D"yiv26514011"><div id=3D"yiv26514011yui=
+_3_2_0_13_143488682706073" class=3D"yiv26514011yui_3_2_0_13_143488682706050=
+ yiv26514011yui_3_2_0_38_143489423839852 yiv26514011yui_3_2_0_51_1434893621=
+12254 yiv26514011yui_3_2_0_3_143490265495357 yiv26514011yui_3_2_0_4_1434902=
+65495358" style=3D"font-family:MS PMincho, serif;font-size:12pt;"><div id=
+=3D"yiv26514011"><div id=3D"yiv26514011yui_3_2_0_11_143488682706071" class=
+=3D"yiv26514011yui_3_2_0_11_143488682706050 yiv26514011yui_3_2_0_13_1434886=
+82706052 yiv26514011yui_3_2_0_38_143489423839854 yiv26514011yui_3_2_0_51_14=
+3489362112256 yiv26514011yui_3_2_0_3_143490265495359 yiv26514011yui_3_2_0_4=
+_143490265495360" style=3D"font-family:MS PMincho, serif;font-size:12pt;"><=
+div id=3D"yiv26514011"><div id=3D"yiv26514011yui_3_2_0_10_143488682706069"
+ class=3D"yiv26514011yui_3_2_0_10_143488682706050 yiv26514011yui_3_2_0_11_1=
+43488682706052 yiv26514011yui_3_2_0_13_143488682706054 yiv26514011yui_3_2_0=
+_38_143489423839856=0A yiv26514011yui_3_2_0_51_143489362112258 yiv26514011y=
+ui_3_2_0_3_143490265495361 yiv26514011yui_3_2_0_4_143490265495362" style=3D=
+"font-family:MS PMincho, serif;font-size:12pt;"><div id=3D"yiv26514011"><di=
+v id=3D"yiv26514011yui_3_2_0_9_143488682706067" class=3D"yiv26514011yui_3_2=
+_0_9_143488682706050 yiv26514011yui_3_2_0_10_143488682706052 yiv26514011yui=
+_3_2_0_11_143488682706054=0A yiv26514011yui_3_2_0_13_143488682706056 yiv265=
+14011yui_3_2_0_38_143489423839858 yiv26514011yui_3_2_0_51_143489362112260 y=
+iv26514011yui_3_2_0_3_143490265495363 yiv26514011yui_3_2_0_4_14349026549536=
+4" style=3D"font-family:MS PMincho, serif;font-size:12pt;"><div id=3D"yiv26=
+514011"><div id=3D"yiv26514011yui_3_2_0_5_143488682706065" class=3D"yiv2651=
+4011yui_3_2_0_5_143488682706050 yiv26514011yui_3_2_0_9_143488682706052=0A y=
+iv26514011yui_3_2_0_10_143488682706054 yiv26514011yui_3_2_0_11_143488682706=
+056 yiv26514011yui_3_2_0_13_143488682706058 yiv26514011yui_3_2_0_38_1434894=
+23839860 yiv26514011yui_3_2_0_51_143489362112262 yiv26514011yui_3_2_0_3_143=
+490265495365 yiv26514011yui_3_2_0_4_143490265495366" style=3D"font-family:M=
+S PMincho, serif;font-size:12pt;"><div id=3D"yiv26514011"><div id=3D"yiv265=
+14011yui_3_2_0_12_143484360488663" class=3D"yiv26514011yui_3_2_0_12_1434843=
+60488650 yiv26514011yui_3_2_0_5_143488682706052 yiv26514011yui_3_2_0_9_1434=
+88682706054=0A yiv26514011yui_3_2_0_10_143488682706056 yiv26514011yui_3_2_0=
+_11_143488682706058 yiv26514011yui_3_2_0_13_143488682706060 yiv26514011yui_=
+3_2_0_38_143489423839862 yiv26514011yui_3_2_0_51_143489362112264 yiv2651401=
+1yui_3_2_0_3_143490265495367 yiv26514011yui_3_2_0_4_143490265495368" style=
+=3D"font-family:MS PMincho, serif;font-size:12pt;"><div id=3D"yiv26514011">=
+<div id=3D"yiv26514011yui_3_2_0_4_143484360488661" class=3D"yiv26514011yui_=
+3_2_0_4_143484360488650 yiv26514011yui_3_2_0_12_143484360488652 yiv26514011=
+yui_3_2_0_5_143488682706054=0A yiv26514011yui_3_2_0_9_143488682706056 yiv26=
+514011yui_3_2_0_10_143488682706058 yiv26514011yui_3_2_0_11_143488682706060 =
+yiv26514011yui_3_2_0_13_143488682706062 yiv26514011yui_3_2_0_38_14348942383=
+9864 yiv26514011yui_3_2_0_51_143489362112266 yiv26514011yui_3_2_0_3_1434902=
+65495369 yiv26514011yui_3_2_0_4_143490265495370" style=3D"font-family:MS PM=
+incho, serif;font-size:12pt;"><div id=3D"yiv26514011"><div id=3D"yiv2651401=
+1yui_3_2_0_4_143484360488664" style=3D"font-family:MS PMincho, serif;font-s=
+ize:12pt;" class=3D"yiv26514011yui_3_2_0_3_143482795885250 yiv26514011yui_3=
+_2_0_4_143484360488652=0A yiv26514011yui_3_2_0_12_143484360488654=0A yiv265=
+14011yui_3_2_0_5_143488682706056 yiv26514011yui_3_2_0_9_143488682706058 yiv=
+26514011yui_3_2_0_10_143488682706060 yiv26514011yui_3_2_0_11_14348868270606=
+2 yiv26514011yui_3_2_0_13_143488682706064 yiv26514011yui_3_2_0_38_143489423=
+839866 yiv26514011yui_3_2_0_51_143489362112268 yiv26514011yui_3_2_0_3_14349=
+0265495371 yiv26514011yui_3_2_0_4_143490265495372"><div id=3D"yiv26514011">=
+<div id=3D"yiv26514011yui_3_2_0_8_143473025243757" class=3D"yiv26514011yui_=
+3_2_0_8_143473025243750 yiv26514011yui_3_2_0_3_143482795885254 yiv26514011y=
+ui_3_2_0_4_143484360488654 yiv26514011yui_3_2_0_12_143484360488656 yiv26514=
+011yui_3_2_0_5_143488682706058 yiv26514011yui_3_2_0_9_143488682706060 yiv26=
+514011yui_3_2_0_10_143488682706062 yiv26514011yui_3_2_0_11_143488682706064 =
+yiv26514011yui_3_2_0_13_143488682706066 yiv26514011yui_3_2_0_38_14348942383=
+9868 yiv26514011yui_3_2_0_51_143489362112270 yiv26514011yui_3_2_0_3_1434902=
+65495373 yiv26514011yui_3_2_0_4_143490265495374"
+ style=3D"font-family:MS PMincho, serif;font-size:12pt;"><div id=3D"yiv2651=
+4011"><div id=3D"yiv26514011yui_3_2_0_7_143473025243755" class=3D"yiv265140=
+11yui_3_2_0_7_143473025243750 yiv26514011yui_3_2_0_8_143473025243752=0A yiv=
+26514011yui_3_2_0_3_143482795885258 yiv26514011yui_3_2_0_4_143484360488656=
+=0A yiv26514011yui_3_2_0_12_143484360488658 yiv26514011yui_3_2_0_5_14348868=
+2706060 yiv26514011yui_3_2_0_9_143488682706062=0A yiv26514011yui_3_2_0_10_1=
+43488682706064 yiv26514011yui_3_2_0_11_143488682706066 yiv26514011yui_3_2_0=
+_13_143488682706068 yiv26514011yui_3_2_0_38_143489423839870 yiv26514011yui_=
+3_2_0_51_143489362112272 yiv26514011yui_3_2_0_3_143490265495375 yiv26514011=
+yui_3_2_0_4_143490265495376" style=3D"font-family:MS PMincho, serif;font-si=
+ze:12pt;"><div id=3D"yiv26514011"><div id=3D"yiv26514011yui_3_2_0_6_1434625=
+51796853" class=3D"yiv26514011yui_3_2_0_6_143462551796850 yiv26514011yui_3_=
+2_0_7_143473025243752 yiv26514011yui_3_2_0_8_143473025243754 yiv26514011yui=
+_3_2_0_3_143482795885262=0A yiv26514011yui_3_2_0_4_143484360488658 yiv26514=
+011yui_3_2_0_12_143484360488660 yiv26514011yui_3_2_0_5_143488682706062 yiv2=
+6514011yui_3_2_0_9_143488682706064 yiv26514011yui_3_2_0_10_143488682706066 =
+yiv26514011yui_3_2_0_11_143488682706068 yiv26514011yui_3_2_0_13_14348868270=
+6070 yiv26514011yui_3_2_0_38_143489423839872 yiv26514011yui_3_2_0_51_143489=
+362112274 yiv26514011yui_3_2_0_3_143490265495377 yiv26514011yui_3_2_0_4_143=
+490265495378" style=3D"font-family:MS PMincho, serif;font-size:12pt;"><div =
+id=3D"yiv26514011yui_3_2_0_4_143462551796840">Dearest,<br><br>I am Mrs Zahr=
+a Hami and I am married to Mr. Roshan Hami =0Afor 19 years without a child =
+and my husband died in just four days of =0Ahis illness. I am contacting yo=
+u to let you know my desire to donate the=0A huge sum to charities in your =
+country which I inherited from my late =0Ahusband. Due to my illness (cance=
+r) I have been confirmed to leave for =0Ajust eight months by doctors, so i=
+t is my desire that this money is =0Ainvested and distributed to charity or=
+ganizations of your choice like =0Aorphanage homes, schools, Home for the h=
+omeless, Home for the elderly, =0Ahospital and many other things that will =
+be to the benefit of the less =0Aprivilege. I want you=0A to send your name=
+ and address so that I start processing the affidavit =0Athat will prove yo=
+u the new beneficiary to the fund. Once I receive your=0A reply confirming =
+your acceptance of the work, I will give all relevant =0Ainformation and sw=
+ear affidavit to authorize the bank release and =0Atransfer the money to yo=
+u as my duly appointed representative.<br><br>Remain blessed,<br>Mrs. Zahra=
+ Hami<span></span><span></span><span></span><span></span><span></span><span=
+></span><span></span><span></span><span></span><span></span><span></span><s=
+pan></span><span></span><span></span><span></span></div></div></div></div><=
+/div></div></div></div></div></div></div></div></div></div></div></div></di=
+v></div></div></div></div></div></div></div></div></div></div></div></div><=
+/div></div></div></div></div></body></html>
+--0-1162704052-1434912637=:79131--

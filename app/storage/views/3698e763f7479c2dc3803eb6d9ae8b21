@@ -1,0 +1,15 @@
+<?php $__env->startSection('content'); ?>
+
+	<h1><?php echo Lang::get('gallery::gallery.overview') . ' ' . Lang::choice('gallery::gallery.album', 2); ?></h1>
+
+	<?php if ($allAlbums->count()): ?>
+		<?php foreach($allAlbums as $album): ?>
+			<h3><?php echo link_to("gallery/album/$album->album_id", $album->album_name); ?></h3>
+			<blockquote class="lead"><?php echo $album->album_description; ?></blockquote>
+		<?php endforeach; ?>
+
+	<?php else: ?>
+    	<?php echo Lang::get('gallery::gallery.none') . Lang::choice('gallery::gallery.album', 2); ?>
+	<?php endif; ?>
+
+<?php $__env->stopSection(); ?>

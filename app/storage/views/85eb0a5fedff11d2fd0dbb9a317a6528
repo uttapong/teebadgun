@@ -1,0 +1,249 @@
+<?php $__env->startSection('title'); ?>
+Teebadgun.com : เพราะเราเข้าใจคนเล่นแบดมินตัน
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+    <script>
+$( document ).ready(function( ) {
+<?php if($badge): ?>
+showBadge(<?php echo $badge->id; ?>,'<?php echo $badge->name; ?>','<?php echo $badge->desc; ?>');
+<?php endif; ?>
+
+});
+
+
+    </script>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+<?php if (Auth::user()): ?>
+<div class="row">
+<?php if(Session::has('message')): ?>
+    <?php echo Session::get('message'); ?>
+<?php endif; ?>
+  <div class="col-md-12 profile-header">
+    
+
+    <div class='row'>
+        <div class="col-md-3 left">
+          <h1><?php echo Auth::user()->firstname; ?> <?php echo Auth::user()->lastname; ?></h1>
+          <div class="row">
+            <div class="col-md-3 left">
+            <?php if(Auth::user()->picture): ?>
+            <img src="<?php echo Auth::user()->picture; ?>" class="profile-image-s" />
+            <?php else: ?>
+            <img src="<?php echo asset('assets/images/guest.jpg');; ?>" class="profile-image-s" />
+            <?php endif; ?>
+            </div>
+            <div class="col-md-9 left">
+            <ul>
+              <li><span class="glyphicon glyphicon-envelope"></span> <?php echo Auth::user()->email; ?></li>
+              <li><span class="glyphicon glyphicon-map-marker"></span> จังหวัด 
+              <?php if(Auth::user()->province): ?>
+              <?php echo Auth::user()->province()->name; ?>
+              <?php endif; ?></li>
+              <li>
+                <?php if(Auth::user()->fb_id): ?>
+             <a href="<?php echo Auth::user()->link; ?>" target='_blank' class='btn btn-primary btn-xs' ><i class="fa fa-facebook-square fa-lg"></i> Facebook Connected</a>
+            <?php else: ?>
+            <button onclick="connectFB();" class='btn btn-primary btn-xs' ><i class="fa fa-facebook-square fa-lg"></i> เชื่อมต่อ Facebook</button>
+            <?php endif; ?>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 left">
+          <h2>สังกัดทีม</h2>
+          <?php foreach(Auth::user()->teams as $team): ?>
+            <div class='team-icon'><a href='<?php echo route('team',array($team->team->id)); ?>'>
+            <p><img src='<?php echo $team->team->logo; ?>'/>
+            <h5><?php echo $team->team->name; ?></h5></p>
+            </a></div>
+          <?php endforeach; ?>
+        </div>
+        <div class="col-md-3 left">
+          <h2>ลายเซ็นต์</h2>
+          <?php echo Auth::user()->signature; ?>
+        </div>
+        <div class="col-md-3 left">
+           <h2>เหรียญรางวัล</h2>
+            <?php foreach(Auth::user()->userbadges as $userbadge): ?>
+            <div class='badge-icon'><a href='javascript:void(0);' onclick='showBadge(<?php echo $userbadge->badge->id; ?>,"<?php echo $userbadge->badge->name; ?>","<?php echo $userbadge->badge->desc; ?>")'>
+            <p><img src='<?php echo asset('assets/images/badge/'.$userbadge->badge->id.'.png'); ?>' alt="<?php echo $userbadge->badge->name; ?>"/></p>
+            </a></div>
+          <?php endforeach; ?>
+        </div>
+    </div>
+  
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+            <a href="<?php echo route('gymadd'); ?>" class="btn btn-info "><span class="glyphicon glyphicon-plus"></span> เพิ่มคอร์ทแบดมินตัน</a>
+            <a href="<?php echo route('addteam'); ?>" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span> เพิ่มทีมแบดมินตัน</a>
+         
+  </div>
+</div>
+  <?php endif; ?>
+<div class="row">
+  <div class="col-md-3 left">
+	<div class="row">
+		<?php echo $__env->make('stat', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	</div>
+  </div>
+  <div class="col-md-9 left">
+	
+	
+	<div class="row">
+		<div class="col-md-12 left">
+                <h1 class="title">ทีมที่เปิดทำการวันนี้</h1>
+        </div>
+        <div class="col-md-6 left">
+            <div id="open-team">
+                <ul>
+                  <?php foreach($open_teams1 as $team): ?>
+                    <li class="open-team">
+                    <a href="<?php echo route('team',array($team->id)); ?>">
+                    <?php if($team->logo): ?>
+                      <img src="<?php echo $team->logo; ?>" class='team-logo-icon'/>
+                    <?php else: ?>
+                      <i class="fa fa-users fa-lg"></i>
+                    <?php endif; ?>
+                    <?php echo $team->name; ?></a></li>
+                  <?php endforeach; ?>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 left">
+            <div id="open-team">
+                <ul>
+                  <?php foreach($open_teams2 as $team): ?>
+                    <li class="open-team">
+                    <a href="<?php echo route('team',array($team->id)); ?>">
+                    <?php if($team->logo): ?>
+                      <img src="<?php echo $team->logo; ?>" class='team-logo-icon'/>
+                    <?php else: ?>
+                      <i class="fa fa-users fa-lg"></i>
+                    <?php endif; ?>
+                    <?php echo $team->name; ?></a></li>
+                  <?php endforeach; ?>
+                </ul>
+            </div>
+        </div>
+		
+	</div>
+	
+  </div>
+</div>
+
+<div class="row hightlight">
+    <div class="col-md-4 center">
+      <a href="<?php echo route('where'); ?>" >
+      <img src="<?php echo asset('assets/images/question.png');; ?>" />
+      <h2>ตีที่ไหนดี</h2>
+      <p>คุณสามารถค้นหาคอร์ทแบดมินตัน และทีมแบดมินตันได้โดยการค้นหาจากแผนที่ คุณยังสามารถประกาศหาเพื่อนที่ลงบนโซเชียลเนตเวิร์คได้อีกด้วย</p>
+      </a>
+    </div>
+    <div class="col-md-4 center">
+    <a href="<?php echo route('forums'); ?>" >
+      <img src="<?php echo asset('assets/images/chat.png');; ?>" />
+      <h2>พูดคุย</h2>
+      <p>คุณยังสามารถพูดคุยเรื่องราว ข่าวสาร ประสบการณ์ หรือเทคนิคต่างๆ เกี่ยวกับการเล่นแบดมินตัน แสดงความคิดเห็นเกี่ยวกับข่าว หรือประกาศการแข่งขันที่กำลังจะมีขึ้น </p>
+    </a>
+    </div>
+    <div class="col-md-4 center">
+    <a href="<?php echo route('addteam'); ?>" >
+      <img src="<?php echo asset('assets/images/plus.png');; ?>" />
+      <h2>เพิ่มข้อมูลทีม หรือ คอร์ท</h2>
+      <p>คุณสามารถสร้างทีม และคอร์ทแบดมินตันที่คุณรู้จัก และมอบหมายหัวหน้าทีมเพื่ออำนวยความสะดวกแก่การค้นหา หรือเชิญชวนผู้เล่นท่านอื่นให้มาเล่นด้วยกัน</p>
+    </a>
+    </div>
+</div>
+
+
+<div class="row">
+
+  <div class="col-md-4 left">
+    <div class="row">
+        <div class="col-md-12 left">
+          <h2 class="title">ข่าวแบดมินตัน</h2>
+            <div class="news-list">
+            <?php if($news_all->first()->filename()): ?>
+
+        <img style="width: 80%" src="<?php echo $news_all->first()->getfile(); ?>" />
+        <?php else: ?>
+        <img style="width: 80%" src="<?php echo asset('assets/images/headline.jpg');; ?>" />
+        <?php endif; ?>
+        <p class='excerpt'><?php echo $news_all->first()->shorten(); ?></p>
+
+                <ul>
+                  <?php foreach($news_all as $news): ?>
+                    <li><a href="<?php echo route('news',array($news->slug)); ?>" ><?php echo $news->title; ?></a></li>
+                    <?php endforeach; ?>
+                </ul>
+                <a href="<?php echo route('news'); ?>" class='btn btn-info btn-xs more'>อ่านทั้งหมด</a>
+            </div>
+            
+        </div>
+        
+    
+  </div>
+  </div>
+  <div class="col-md-4 left">
+    <div class="row">
+        <div class="col-md-12 left">
+          <h2 class="title">บทความแบดมินตัน</h2>
+            <div class="news-list">
+            <?php if($article_all->first()->filename()): ?>
+
+        <img style="width: 80%" src="<?php echo $article_all->first()->getfile(); ?>" />
+        <?php else: ?>
+        <img style="width: 80%" src="<?php echo asset('assets/images/headline.jpg');; ?>" />
+        <?php endif; ?>
+        <p class='excerpt'><?php echo $article_all->first()->shorten(); ?></p>
+                <ul>
+                  <?php foreach($article_all as $news): ?>
+                    <li><a href="<?php echo route('news',array($news->slug)); ?>" ><?php echo $news->title; ?></a></li>
+                    <?php endforeach; ?>
+                    
+                </ul>
+                <a href="<?php echo route('article'); ?>" class='btn btn-info btn-xs more'>อ่านทั้งหมด</a>
+            </div>
+            
+        </div>
+        
+    
+  </div>
+  </div>
+
+  <div class="col-md-4 left">
+    <div class="row">
+        <div class="col-md-12 left">
+          <h2 class="title">ประกาศการแข่งขัน</h2>
+            <div class="news-list">
+            <?php if($announcement_all->first()->filename()): ?>
+
+        <img style="width: 80%" src="<?php echo $announcement_all->first()->getfile(); ?>" />
+        <?php else: ?>
+        <img style="width: 80%" src="<?php echo asset('assets/images/headline.jpg');; ?>" />
+        <?php endif; ?>
+        <p class='excerpt'><?php echo $announcement_all->first()->shorten(); ?></p>
+                <ul>
+                  <?php foreach($announcement_all as $news): ?>
+                    <li><a href="<?php echo route('news',array($news->slug)); ?>" ><?php echo $news->title; ?></a></li>
+                    <?php endforeach; ?>
+                </ul>
+                <a href="<?php echo route('announcement'); ?>" class='btn btn-info btn-xs more'>อ่านทั้งหมด</a>
+            </div>
+            
+        </div>
+        
+    
+  </div>
+  </div>
+
+</div>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

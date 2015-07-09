@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+</head>
+<body>
+
+<div id="brdheader">
+	<h1><a href="<?php echo route('index'); ?>"><?php echo $board_title; ?></a></h1>
+	<div id="brddesc"><?php echo $board_description; ?></div>
+	<div id="brdmenu">
+		<ul>
+			<!-- TODO: Class isactive -->
+			<li id="navindex" class="isactive"><a href="<?php echo route('index'); ?>"><?php echo trans('fluxbb::common.index'); ?></a></li>
+<?php if (FluxBB\Models\User::current()->group->g_read_board == '1' && FluxBB\Models\User::current()->group->g_view_users == '1'): ?>
+			<li id="navuserlist"><a href="<?php echo route('userlist'); ?>"><?php echo trans('fluxbb::common.user_list'); ?></a></li>
+<?php endif; ?>
+<?php if (FluxBB\Models\Config::enabled('o_rules') && (Auth::check() || FluxBB\Models\User::current()->group->g_read_board == '1' || FluxBB\Models\Config::enabled('o_regs_allow'))): ?>
+			<li id="navrules"><a href="<?php echo route('rules'); ?>"><?php echo trans('fluxbb::common.rules'); ?></a></li>
+<?php endif; ?>
+<?php if (FluxBB\Models\User::current()->group->g_read_board == '1' && FluxBB\Models\User::current()->group->g_search == '1'): ?>
+			<li id="navsearch"><a href="<?php echo route('search'); ?>"><?php echo trans('fluxbb::common.search'); ?></a></li>
+<?php endif; ?>
+<?php if (Auth::guest()): ?>
+			<li id="navregister"><a href="<?php echo route('register'); ?>"><?php echo trans('fluxbb::common.register'); ?></a></li>
+			<li id="navlogin"><a href="<?php echo route('login'); ?>"><?php echo trans('fluxbb::common.login'); ?></a></li>
+<?php else: ?>
+			<li id="navprofile"><a href="<?php echo route('profile', array('id' => Auth::user()->id)); ?>"><?php echo trans('fluxbb::common.profile'); ?></a></li>
+	<?php if (FluxBB\Models\User::current()->isAdmin()): ?>
+			<li id="navadmin"><a href="<?php echo route('admin'); ?>"><?php echo trans('fluxbb::common.admin'); ?></a></li>
+	<?php endif; ?>
+			<li id="navlogout"><a href="<?php echo route('logout'); ?>"><?php echo trans('fluxbb::common.logout'); ?></a></li>
+<?php endif; ?>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+
+<?php $__env->startSection('main'); ?>
+Pages: <?php echo e($users->links()); ?>
+<h2>User list</h2>
+
+<table cellspacing="0">
+	<thead>
+		<tr>
+			<th scope="col">Username</th>
+			<th scope="col">Title</th>
+			<th scope="col">Posts</th>
+			<th scope="col">Registered</th>
+		</tr>
+	</thead>
+	<tbody>
+
+<?php foreach ($users as $user): ?>
+		<tr>
+			<td><a href="<?php echo route('profile', array('id' => $user->id)); ?>"><?php echo $user->username; ?></a></td>
+			<td><?php echo $user->title; ?></td>
+			<td><?php echo $user->num_posts; ?></td>
+			<td><?php echo ($user->registered); ?></td><?php /*  HTML::format_time(registered, true)  */ ?>
+		</tr>
+<?php endforeach; ?>
+
+	</tbody>
+</table>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('fluxbb::layout.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

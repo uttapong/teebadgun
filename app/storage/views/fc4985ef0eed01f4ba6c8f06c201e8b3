@@ -1,0 +1,22 @@
+
+<?php $__env->startSection('main'); ?>
+
+	<h2>Admin User</h2>
+
+	<form method="POST">
+		<label>Username</label>
+		<input type="text" name="username" />
+		<br>
+		<label>Email</label>
+		<input type="text" name="email" />
+		<br>
+		<label>Password</label>
+		<input type="password" name="password" />
+		<input type="password" name="password_confirmation" />
+		<br><br>
+		<input type="submit" value="Continue" />
+	</form>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('fluxbb_installer::layout.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

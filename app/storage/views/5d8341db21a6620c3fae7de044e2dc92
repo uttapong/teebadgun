@@ -1,0 +1,13 @@
+<?php echo $__env->make('fluxbb::layout.partials.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<div id="brdmain">
+
+<?php echo $__env->yieldContent('alerts'); ?>
+
+<?php echo $__env->yieldContent('main'); ?>
+
+</div>
+
+<?php echo $__env->make('fluxbb::layout.partials.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+

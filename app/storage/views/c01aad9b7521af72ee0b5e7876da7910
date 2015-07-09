@@ -1,0 +1,49 @@
+
+<?php $__env->startSection('script'); ?>
+<script>
+function confirmDelete(id){
+
+	bootbox.confirm("คุณต้องการลบบทความนี้?", function(result) {
+  
+  if(result){
+  	location.href='<?php echo route('home'); ?>/manage/content/remove/'+id;
+  }
+}); 
+}
+</script>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('style'); ?>
+<style>
+
+</style>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+<?php if(Session::has('message')): ?>
+    <?php echo Session::get('message'); ?>
+<?php endif; ?>
+<h1>บทความทั้งหมด</h1>
+<p><a href="<?php echo route('new_content'); ?>" class="btn btn-info">New content</a> </p>
+<table class='table table-hover table-striped' style="font-size: 12px;">
+<tr> 
+	<th>หัวข้อ</th>
+	<th>ประเภท</th>
+	<th>last updated</th>
+	<th>edit</th>
+	<th>delete</th>
+</tr>
+
+<?php foreach($contents as $content): ?>
+	<tr>
+    <td><a target="_blank" href="<?php echo route('news',array($content->slug)); ?>" > <?php echo $content->title; ?></a></td>
+    <td><?php echo $content->category; ?></td>
+    <td><?php echo $content->updated_at; ?></td>
+    <td><a class='btn btn-sm btn-warning' href="<?php echo route('edit_content',array($content->id)); ?>" > edit</a></td>
+    <td><button class='btn btn-sm btn-danger' onclick="confirmDelete(<?php echo $content->id; ?>);" > delete</a></td>
+    </tr>
+ <?php endforeach; ?>
+ 
+ </table>
+ <?php echo $contents->links();; ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,16 @@
+<?php $__env->startSection('content'); ?>
+	
+	<a href='<?php echo URL::to("gallery/album/$photo->album_id"); ?>'><?php echo Lang::get('gallery::gallery.return'); ?></a>
+
+	<h1><?php echo $photo->photo_name; ?></h1>
+	
+	<?php echo Form::open(array('method' => 'DELETE', 'url' => array('gallery/photo', $photo->photo_id))); ?>
+        <?php echo link_to("gallery/edit/photo/$photo->photo_id", Lang::get('gallery::gallery.edit'), array('class' => 'btn btn-info')); ?>
+        <?php echo Form::submit(Lang::get('gallery::gallery.delete'), array('class' => 'btn btn-danger')); ?>
+    <?php echo Form::close(); ?>
+
+	<img src='<?php echo asset("uploads/photos/" . $photo->photo_path ); ?>' />
+
+	<blockquote class="lead"><?php echo $photo->photo_description; ?></blockquote>
+	
+<?php $__env->stopSection(); ?>

@@ -1,0 +1,12 @@
+
+<?php $__env->startSection('main'); ?>
+
+<h1>ADMIN groups</h1>
+
+<?php foreach ($groups as $group): ?>
+	<p><a href="<?php echo route('admin_groups_edit', array($group->id)); ?>"><?php echo $group->title; ?></a></p>
+<?php endforeach; ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('fluxbb::admin.layout.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

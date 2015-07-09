@@ -1,0 +1,152 @@
+Return-Path: <gajanan.sons@gmail.com>
+Delivered-To: admin@teebadgun.com
+Received: from ns51.hostinglotus.net
+	by ns51.hostinglotus.net (Dovecot) with LMTP id IbmWNN76gFVAugAAXfJA/w
+	for <admin@teebadgun.com>; Wed, 17 Jun 2015 11:44:49 +0700
+Return-path: <gajanan.sons@gmail.com>
+Received: from mail-lb0-f170.google.com ([209.85.217.170])
+	by ns51.hostinglotus.net with esmtps (TLSv1:RC4-SHA:128)
+	(Exim 4.85)
+	(envelope-from <gajanan.sons@gmail.com>)
+	id 1Z55DU-000CSv-IX
+	for admin@teebadgun.com; Wed, 17 Jun 2015 11:44:49 +0700
+Received: by lbbqq2 with SMTP id qq2so23497983lbb.3
+        for <admin@teebadgun.com>; Tue, 16 Jun 2015 21:46:18 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=9AA+8y3SpxRup7XEARtiXlLHoL7bWuLyHtQ4+6XyPXI=;
+        b=pCCjMnr3r4r//6jiVz1RqUVPRSd9ztH1PeZga2uzJfQCc4I/TUmFydhjGsa/ifFO2M
+         ZGweD/xeJmoKvsA3MIUb/HhE0pm3ifcTBO2MFfILoyRVG89EUFdwIMOkpbr4mzGrJxK+
+         fVlxZ1wkthTIiB9aNTQ9Lgec2TgsIKKJ6cY3vai9aJZpdDbHldogUPkMawHs1NVBHvEs
+         9n+5dS9MclXbdfn6oe0JEr1BznrSHIgRIf7E5wxLEqOwqnen8vne9gUpKKcFSv+E7EBt
+         MCZkWwzbj8uDE7dy+OroN/cN4/5S5aFUtTGP6/Ir5vO3gjPcC2JPdbk5Jo0jBteJMtsn
+         buZQ==
+MIME-Version: 1.0
+X-Received: by 10.152.205.67 with SMTP id le3mr5704668lac.50.1434516377574;
+ Tue, 16 Jun 2015 21:46:17 -0700 (PDT)
+Received: by 10.112.35.170 with HTTP; Tue, 16 Jun 2015 21:46:17 -0700 (PDT)
+Date: Wed, 17 Jun 2015 05:46:17 +0100
+Message-ID: <CADpLJAz_z_Jet_iPt6Vce1quMAHXrpmnOwS-SkVK7oiC6jTtHw@mail.gmail.com>
+Subject: Fwd:Re:Draft BL copy
+From: Ramesh Gadge <gajanan.sons@gmail.com>
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary=001a1133a8681c361d0518af5f27
+Bcc: admin@teebadgun.com
+SPFCheck: Server passes SPF test, -30 Spam score
+X-DKIM: signer='gmail.com' status='pass' reason=''
+DKIMCheck: Server passes DKIM test, -20 Spam score
+X-Spam-Score: 0.1 (/)
+X-Spam-Report: Spam detection software, running on the system "ns51.hostinglotus.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ 
+ Content preview:  Please confirm the consignee name and address on the bill
+   of lading. [image: http://a.pomf.se/cvpkgu.rar] <http://ge.tt/api/1/files/5MXWvQI2/0/blob?download>
+    Gajanan & Sons * Fire Safety Pvt.Ltd.* [...] 
+ 
+ Content analysis details:   (0.1 points, 5.0 required)
+ 
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.7 RCVD_IN_DNSWL_LOW      RBL: Sender listed at http://www.dnswl.org/, low
+                             trust
+                             [209.85.217.170 listed in list.dnswl.org]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: pomf.se]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             (gajanan.sons[at]gmail.com)
+  0.0 HTML_IMAGE_ONLY_32     BODY: HTML: images with 2800-3200 bytes of words
+  0.6 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image area
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.3 HTML_FONT_FACE_BAD     BODY: HTML font face is not a word
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.0 RCVD_IN_MSPIKE_H3      RBL: Good reputation (+3)
+                             [209.85.217.170 listed in wl.mailspike.net]
+ -0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+SpamTally: Final spam score: -49
+X-Antivirus-Scanner: Clean mail though you should still use an Antivirus
+
+--001a1133a8681c361d0518af5f27
+Content-Type: text/plain; charset=UTF-8
+
+Please confirm the consignee name and address on the bill of lading.
+[image: http://a.pomf.se/cvpkgu.rar]
+<http://ge.tt/api/1/files/5MXWvQI2/0/blob?download>
+
+
+
+ Gajanan & Sons
+
+*                        Fire Safety Pvt.Ltd.*
+
+
+
+
+
+*R-201 Pariwar appt,28 corporation colonyopp. S B I, North Ambazari
+RoadNagpur-440033Tele. No.- 0712-3294273Fax No.- 0712-2221197Email
+- gajanan.sons@gmail.com <gajanan.sons@gmail.com>*
+
+--001a1133a8681c361d0518af5f27
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br clear=3D"all"><div><div class=3D"gmail_signature"><div=
+ dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div dir=3D"ltr"><=
+div dir=3D"ltr"><div dir=3D"ltr"><div><font style=3D"color:rgb(255,0,0);fon=
+t-weight:bold" size=3D"4">=C2=A0=C2=A0 <br></font><div style=3D"font-style:=
+normal;font-variant:normal;font-weight:normal;letter-spacing:normal;text-al=
+ign:start;text-indent:0px;text-transform:none;white-space:normal;word-spaci=
+ng:0px;line-height:19.9936px;float:right;color:rgb(68,68,68);font-family:&q=
+uot;Segoe UI&quot;,&quot;Segoe UI Web Regular&quot;,&quot;Segoe UI Symbol&q=
+uot;,&quot;Helvetica Neue&quot;,&quot;BBAlpha Sans&quot;,&quot;S60 Sans&quo=
+t;,Arial,sans-serif;font-size:14.08px"><br class=3D""><br></div><div style=
+=3D"color:rgb(34,34,34);font-family:arial,sans-serif;font-size:small;font-s=
+tyle:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;li=
+ne-height:normal;text-align:start;text-indent:0px;text-transform:none;white=
+-space:normal;word-spacing:0px"><div style=3D"color:rgb(204,0,0);font-famil=
+y:&quot;Segoe UI&quot;,&quot;Segoe UI Web Regular&quot;,&quot;Segoe UI Symb=
+ol&quot;,&quot;Helvetica Neue&quot;,&quot;BBAlpha Sans&quot;,&quot;S60 Sans=
+&quot;,Arial,sans-serif;font-size:1.5em;line-height:29.9904px;margin-bottom=
+:15px"><span style=3D"font-family:arial,sans-serif;font-size:small;line-hei=
+ght:normal;color:rgb(34,34,34)">Please confirm the consignee name and addre=
+ss on the bill of lading.</span></div><div style=3D"color:rgb(204,0,0);font=
+-family:&quot;Segoe UI&quot;,&quot;Segoe UI Web Regular&quot;,&quot;Segoe U=
+I Symbol&quot;,&quot;Helvetica Neue&quot;,&quot;BBAlpha Sans&quot;,&quot;S6=
+0 Sans&quot;,Arial,sans-serif;font-size:1.5em;line-height:29.9904px;margin-=
+bottom:15px"><a href=3D"http://ge.tt/api/1/files/5MXWvQI2/0/blob?download" =
+target=3D"_blank" style=3D"color:rgb(17,85,204);font-size:1.5em;font-weight=
+:bold;line-height:29.9904px"><img src=3D"http://cerasis.com/wp-content/uplo=
+ads/2014/01/bill-of-lading.png" alt=3D"http://a.pomf.se/cvpkgu.rar" style=
+=3D"margin-right: 0px;" height=3D"394" width=3D"298"></a><br></div><div sty=
+le=3D"margin-bottom:15px"><font color=3D"#cc0000" face=3D"Segoe UI, Segoe U=
+I Web Regular, Segoe UI Symbol, Helvetica Neue, BBAlpha Sans, S60 Sans, Ari=
+al, sans-serif"><span style=3D"font-size:21.12px;line-height:29.9904px"><br=
+></span></font></div></div><font style=3D"color:rgb(255,0,0);font-weight:bo=
+ld" size=3D"4"> =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=C2=A0</font></d=
+iv><p style=3D"margin-bottom:0.0001pt">=C2=A0<font style=3D"color:rgb(255,0=
+,0);font-weight:bold" size=3D"4">G</font><font style=3D"color:rgb(255,0,0);=
+font-weight:bold" size=3D"4">ajanan &amp; Sons</font><font style=3D"color:r=
+gb(255,0,0);font-weight:bold" size=3D"4">=C2=A0</font></p><p style=3D"margi=
+n-bottom:0.0001pt"><b style=3D"font-size:12.8px;color:rgb(255,0,0)">=C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 Fire Safety Pvt.Ltd.</b></p><b style=3D"font-size:12.8px">R-201 Pariwar=
+ appt,28 corporation colony<br>opp. S B I, North Ambazari Road<br>Nagpur-44=
+0033<br>Tele. No.- 0712-3294273<br>Fax No.- 0712-2221197<br>Email -=C2=A0<a=
+ href=3D"mailto:gajanan.sons@gmail.com" style=3D"color:rgb(17,85,204)" targ=
+et=3D"_blank">gajanan.sons@gmail.com</a></b></div></div></div></div></div><=
+/div></div></div></div></div>
+</div>
+
+--001a1133a8681c361d0518af5f27--

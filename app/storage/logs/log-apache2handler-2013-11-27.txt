@@ -1,0 +1,1138 @@
+[2013-11-27 15:52:44] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 15:59:10] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 15:59:13] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 15:59:14] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$team' (T_VARIABLE)' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:40
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 16:11:23] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$team' (T_VARIABLE)' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:40
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 16:11:41] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:42
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 16:11:54] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ''end_time'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:67
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 16:12:08] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?>', expecting function (T_FUNCTION)' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:83
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 16:12:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 16:20:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 16:25:29] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 16:27:46] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Team' not found' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:40
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 16:29:18] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remark' in 'field list'' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:331
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(331): PDO->prepare('insert into `te...')
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `te...', Array)
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(332): Illuminate\Database\Connection->run('insert into `te...', Array, Object(Closure))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(289): Illuminate\Database\Connection->statement('insert into `te...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(30): Illuminate\Database\Connection->insert('insert into `te...', Array)
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `te...', Array, 'id')
+#6 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(786): call_user_func_array(Array, Array)
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#11 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#12 /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php(41): Illuminate\Database\Eloquent\Model->save()
+#13 [internal function]: TeamController->add()
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('add', Array)
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'add', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remark' in 'field list' (SQL: insert into `teams` (`name`, `remark`, `motto`, `tel`, `owner`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?)) (Bindings: array (
+  0 => 'ทีมงุงิ',
+  1 => 'ไม่มีหมายเหตุใดๆทั้งนั้น',
+  2 => 'คำขวัญหีแตด',
+  3 => '0894852280',
+  4 => '2',
+  5 => '2013-11-27 16:29:18',
+  6 => '2013-11-27 16:29:18',
+))' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:556
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `te...', Array)
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(332): Illuminate\Database\Connection->run('insert into `te...', Array, Object(Closure))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(289): Illuminate\Database\Connection->statement('insert into `te...', Array)
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(30): Illuminate\Database\Connection->insert('insert into `te...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `te...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(786): call_user_func_array(Array, Array)
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php(41): Illuminate\Database\Eloquent\Model->save()
+#12 [internal function]: TeamController->add()
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('add', Array)
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'add', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-27 16:30:01] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'owner' in 'field list'' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:331
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(331): PDO->prepare('insert into `te...')
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `te...', Array)
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(332): Illuminate\Database\Connection->run('insert into `te...', Array, Object(Closure))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(289): Illuminate\Database\Connection->statement('insert into `te...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(30): Illuminate\Database\Connection->insert('insert into `te...', Array)
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `te...', Array, 'id')
+#6 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(786): call_user_func_array(Array, Array)
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#11 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#12 /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php(41): Illuminate\Database\Eloquent\Model->save()
+#13 [internal function]: TeamController->add()
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('add', Array)
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'add', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'owner' in 'field list' (SQL: insert into `teams` (`name`, `description`, `motto`, `tel`, `owner`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?)) (Bindings: array (
+  0 => 'ทีมงุงิ',
+  1 => 'ไม่มีหมายเหตุใดๆทั้งนั้น',
+  2 => 'คำขวัญหีแตด',
+  3 => '0894852280',
+  4 => '2',
+  5 => '2013-11-27 16:30:01',
+  6 => '2013-11-27 16:30:01',
+))' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:556
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `te...', Array)
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(332): Illuminate\Database\Connection->run('insert into `te...', Array, Object(Closure))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(289): Illuminate\Database\Connection->statement('insert into `te...', Array)
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(30): Illuminate\Database\Connection->insert('insert into `te...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `te...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(786): call_user_func_array(Array, Array)
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php(41): Illuminate\Database\Eloquent\Model->save()
+#12 [internal function]: TeamController->add()
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('add', Array)
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'add', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-27 16:30:43] log.ERROR: exception 'ErrorException' with message 'Undefined variable: team_id' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:54
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php(54): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/Users/winnie/D...', 54, Array)
+#1 [internal function]: TeamController->add()
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('add', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'add', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-11-27 16:39:15] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Openday' not found' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:73
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 16:39:52] log.ERROR: exception 'UnexpectedValueException' with message 'The Response content must be a string or object implementing __toString(), "boolean" given.' in /Users/winnie/Documents/htdocs/laravel/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php:358
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(73): Symfony\Component\HttpFoundation\Response->setContent(true)
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(141): Illuminate\Http\Response->setContent(true)
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(true)
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(true, Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'add', true)
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'add', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-11-27 16:40:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 16:41:47] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 16:42:28] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 16:52:26] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'court' in 'field list'' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:331
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(331): PDO->prepare('insert into `op...')
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `op...', Array)
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(332): Illuminate\Database\Connection->run('insert into `op...', Array, Object(Closure))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(289): Illuminate\Database\Connection->statement('insert into `op...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(30): Illuminate\Database\Connection->insert('insert into `op...', Array)
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `op...', Array, 'id')
+#6 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(786): call_user_func_array(Array, Array)
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#11 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#12 /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php(78): Illuminate\Database\Eloquent\Model->save()
+#13 [internal function]: TeamController->add()
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('add', Array)
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'add', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'court' in 'field list' (SQL: insert into `opendays` (`day`, `start_time`, `end_time`, `payment`, `court`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?)) (Bindings: array (
+  0 => 'Mon',
+  1 => '18:00',
+  2 => '24:00',
+  3 => 'แล้วแต่อารมณ์',
+  4 => 'คอร์ทแบดมินตันสหสิน',
+  5 => '2013-11-27 16:52:26',
+  6 => '2013-11-27 16:52:26',
+))' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:556
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `op...', Array)
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(332): Illuminate\Database\Connection->run('insert into `op...', Array, Object(Closure))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(289): Illuminate\Database\Connection->statement('insert into `op...', Array)
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(30): Illuminate\Database\Connection->insert('insert into `op...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `op...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(786): call_user_func_array(Array, Array)
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php(78): Illuminate\Database\Eloquent\Model->save()
+#12 [internal function]: TeamController->add()
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('add', Array)
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'add', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-27 17:09:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 17:09:43] log.ERROR: exception 'ErrorException' with message 'Invalid argument supplied for foreach()' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:66
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php(66): Illuminate\Exception\Handler->handleError(2, 'Invalid argumen...', '/Users/winnie/D...', 66, Array)
+#1 [internal function]: TeamController->add()
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('add', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'add', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-11-27 17:12:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 17:12:23] log.ERROR: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'gym' cannot be null' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:331
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(331): PDOStatement->execute(Array)
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `op...', Array)
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(332): Illuminate\Database\Connection->run('insert into `op...', Array, Object(Closure))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(289): Illuminate\Database\Connection->statement('insert into `op...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(30): Illuminate\Database\Connection->insert('insert into `op...', Array)
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `op...', Array, 'id')
+#6 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(786): call_user_func_array(Array, Array)
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#11 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#12 /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php(80): Illuminate\Database\Eloquent\Model->save()
+#13 [internal function]: TeamController->add()
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('add', Array)
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'add', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'gym' cannot be null (SQL: insert into `opendays` (`day`, `start_time`, `end_time`, `payment`, `gym`, `remark`, `team`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?)) (Bindings: array (
+  0 => 'Mon',
+  1 => '18:00',
+  2 => '24:00',
+  3 => 'แล้วแต่อารมณ์',
+  4 => NULL,
+  5 => 'ไม่มีหมายเหตุใดๆทั้งนั้น',
+  6 => 16,
+  7 => '2013-11-27 17:12:23',
+  8 => '2013-11-27 17:12:23',
+))' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php:556
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `op...', Array)
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(332): Illuminate\Database\Connection->run('insert into `op...', Array, Object(Closure))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Connection.php(289): Illuminate\Database\Connection->statement('insert into `op...', Array)
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(30): Illuminate\Database\Connection->insert('insert into `op...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `op...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(786): call_user_func_array(Array, Array)
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php(80): Illuminate\Database\Eloquent\Model->save()
+#12 [internal function]: TeamController->add()
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('add', Array)
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'add', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-11-27 17:19:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 17:37:40] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 17:51:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 17:52:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 18:00:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 18:01:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 18:03:07] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 18:06:19] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 19:51:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 19:52:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 19:58:46] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '=', expecting ')'' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 19:59:02] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '=', expecting ')'' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 19:59:15] log.ERROR: exception 'ErrorException' with message 'Undefined variable: team' in /Users/winnie/Documents/htdocs/laravel/app/storage/views/591386d3b2db1a74d4c5a2192259c65b:424
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/app/storage/views/591386d3b2db1a74d4c5a2192259c65b(424): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/Users/winnie/D...', 424, Array)
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/Users/winnie/D...')
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/winnie/D...', Array)
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/Users/winnie/D...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->getContents()
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(70): Illuminate\View\View->render()
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-11-27 19:59:33] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:05:10] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:05:13] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:06:56] log.ERROR: exception 'ErrorException' with message 'Undefined offset: 0' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Validation/Validator.php:732
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Validation/Validator.php(732): Illuminate\Exception\Handler->handleError(8, 'Undefined offse...', '/Users/winnie/D...', 732, Array)
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Validation/Validator.php(264): Illuminate\Validation\Validator->validateUnique('name', '???????????????...', Array, Object(Illuminate\Validation\Validator))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Validation/Validator.php(225): Illuminate\Validation\Validator->validate('name', 'unique')
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Validation/Validator.php(239): Illuminate\Validation\Validator->passes()
+#4 /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php(34): Illuminate\Validation\Validator->fails()
+#5 [internal function]: TeamController->add()
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('add', Array)
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'add', Array)
+#9 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#11 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#12 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-11-27 20:14:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:17:47] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:21:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:24:06] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:31:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:34:13] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:53:09] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:53:57] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:54:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:55:16] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:55:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:56:44] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:56:49] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 20:57:14] log.ERROR: exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Builder::$managers' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:112
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php(112): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', '/Users/winnie/D...', 112, Array)
+#1 [internal function]: TeamController->edit('21')
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('edit', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('21')
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-11-27 20:58:58] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:112
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 21:10:17] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Undefined class constant 'managers'' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:114
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 21:10:38] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Undefined class constant 'managers'' in /Users/winnie/Documents/htdocs/laravel/app/controllers/TeamController.php:114
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 21:11:55] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:13:43] log.ERROR: exception 'ErrorException' with message 'array_combine(): Both parameters should have an equal number of elements' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:227
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'array_combine()...', '/Users/winnie/D...', 227, Array)
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php(227): array_combine(Array, Array)
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php(189): Illuminate\Routing\UrlGenerator->buildParameterList(Object(Illuminate\Routing\Route), Array)
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php(806): Illuminate\Routing\UrlGenerator->route('updateteam', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php(766): Illuminate\Html\FormBuilder->getRouteAction(Array)
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php(109): Illuminate\Html\FormBuilder->getAction(Array)
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php(151): Illuminate\Html\FormBuilder->open(Array)
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(209): Illuminate\Html\FormBuilder->model(Object(Team), Array)
+#8 /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73(428): Illuminate\Support\Facades\Facade::__callStatic('model', Array)
+#9 /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73(428): Illuminate\Support\Facades\Form::model(Object(Team), Array)
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/Users/winnie/D...')
+#11 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/winnie/D...', Array)
+#12 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/Users/winnie/D...', Array)
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->getContents()
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(70): Illuminate\View\View->render()
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#17 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#18 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#19 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('21')
+#21 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#22 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#23 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-11-27 21:15:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:16:55] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:17:33] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:17:57] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:30:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:31:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:31:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:32:06] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:34:43] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:35:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:36:52] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:38:43] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:50:04] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')', expecting ',' or ';'' in /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73:553
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 21:50:24] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$court' (T_VARIABLE), expecting ')'' in /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73:553
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 21:50:44] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')', expecting ',' or ';'' in /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73:553
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 21:51:08] log.ERROR: exception 'ErrorException' with message 'Undefined variable: courts' in /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73:552
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73(552): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/Users/winnie/D...', 552, Array)
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/Users/winnie/D...')
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/winnie/D...', Array)
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/Users/winnie/D...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->getContents()
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(70): Illuminate\View\View->render()
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('21')
+#12 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-11-27 21:51:39] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::getValue()' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:1658
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('getValue', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->getValue()
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(786): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('getValue', Array)
+#4 [internal function]: Illuminate\Database\Eloquent\Builder->getValue()
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(2653): call_user_func_array(Array, Array)
+#6 /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73(553): Illuminate\Database\Eloquent\Model->__call('getValue', Array)
+#7 /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73(553): Openday->getValue()
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/Users/winnie/D...')
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/winnie/D...', Array)
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/Users/winnie/D...', Array)
+#11 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->getContents()
+#12 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(70): Illuminate\View\View->render()
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#17 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('21')
+#19 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#25 {main} [] []
+[2013-11-27 21:55:19] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:55:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 21:58:37] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '{'' in /Users/winnie/Documents/htdocs/laravel/app/models/Openday.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 21:59:48] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 22:05:15] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 22:10:02] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in /Users/winnie/Documents/htdocs/laravel/app/models/Manager.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 22:16:35] log.ERROR: exception 'ErrorException' with message 'Object of class Illuminate\Database\Query\Builder could not be converted to string' in /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73:448
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73(448): Illuminate\Exception\Handler->handleError(4096, 'Object of class...', '/Users/winnie/D...', 448, Array)
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/Users/winnie/D...')
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/winnie/D...', Array)
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/Users/winnie/D...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->getContents()
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(70): Illuminate\View\View->render()
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('21')
+#12 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-11-27 22:19:42] log.ERROR: exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Query\Builder::$name' in /Users/winnie/Documents/htdocs/laravel/app/models/Manager.php:26
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/app/models/Manager.php(26): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', '/Users/winnie/D...', 26, Array)
+#1 /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73(448): Manager->getName()
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/Users/winnie/D...')
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/winnie/D...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/Users/winnie/D...', Array)
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->getContents()
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(70): Illuminate\View\View->render()
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#11 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('21')
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-11-27 22:19:53] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Allowed memory size of 33554432 bytes exhausted (tried to allocate 25952256 bytes)' in /Users/winnie/Documents/htdocs/laravel/app/models/Manager.php:26
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 22:20:40] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Allowed memory size of 33554432 bytes exhausted (tried to allocate 25952256 bytes)' in /Users/winnie/Documents/htdocs/laravel/app/models/Manager.php:26
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-11-27 22:20:49] log.ERROR: exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Query\Builder::$firstname' in /Users/winnie/Documents/htdocs/laravel/app/models/Manager.php:26
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/app/models/Manager.php(26): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', '/Users/winnie/D...', 26, Array)
+#1 /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73(448): Manager->getName()
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/Users/winnie/D...')
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/winnie/D...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/Users/winnie/D...', Array)
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->getContents()
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(70): Illuminate\View\View->render()
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#11 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('21')
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-11-27 22:21:31] log.ERROR: exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Query\Builder::$firstname' in /Users/winnie/Documents/htdocs/laravel/app/models/Manager.php:26
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/app/models/Manager.php(26): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', '/Users/winnie/D...', 26, Array)
+#1 /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73(448): Manager->getName()
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/Users/winnie/D...')
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/winnie/D...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/Users/winnie/D...', Array)
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->getContents()
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(70): Illuminate\View\View->render()
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#11 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('21')
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-11-27 22:22:07] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in /Users/winnie/Documents/htdocs/laravel/app/models/Manager.php:26
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/app/models/Manager.php(26): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', '/Users/winnie/D...', 26, Array)
+#1 /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73(448): Manager->getName()
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/Users/winnie/D...')
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/winnie/D...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/Users/winnie/D...', Array)
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->getContents()
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(70): Illuminate\View\View->render()
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#11 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('21')
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-11-27 22:22:24] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in /Users/winnie/Documents/htdocs/laravel/app/models/Manager.php:26
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/app/models/Manager.php(26): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', '/Users/winnie/D...', 26, Array)
+#1 /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73(448): Manager->getName()
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/Users/winnie/D...')
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/winnie/D...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/Users/winnie/D...', Array)
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->getContents()
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(70): Illuminate\View\View->render()
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#11 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('21')
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-11-27 22:22:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 22:25:04] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 22:32:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 22:35:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 22:44:14] log.ERROR: exception 'ErrorException' with message 'Undefined variable: user' in /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73:443
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/app/storage/views/5087c262c280cb93b09b918cdc772b73(443): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/Users/winnie/D...', 443, Array)
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/Users/winnie/D...')
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/winnie/D...', Array)
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/Users/winnie/D...', Array)
+#4 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->getContents()
+#5 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(70): Illuminate\View\View->render()
+#6 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#10 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('21')
+#12 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-11-27 22:44:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-11-27 23:24:15] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/winnie/Documents/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/winnie/Documents/htdocs/laravel/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

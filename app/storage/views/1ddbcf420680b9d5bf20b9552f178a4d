@@ -1,0 +1,35 @@
+
+<?php $__env->startSection('title'); ?>
+    Manage Website Settings
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+
+    <h1>Website Settings</h1>
+    <p>Update settings related to your website below:</p>
+    <?php if($items): ?>
+        <?php echo Form::open( array( 'url'=>$object_url , 'class'=>'form-horizontal' , 'role'=>'form' ) ); ?>
+
+            <?php /*  The error / success messaging partial  */ ?>
+            <?php echo $__env->make('laravel-bootstrap::partials.messaging', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+            <?php /*  Loop through each setting and get it prepped for stuff  */ ?>
+            <?php foreach($items as $item): ?>
+
+                <div class="form-group">
+                    <?php echo Form::label( "settings[$item->id]" , $item->label , array( 'class'=>'col-lg-2 control-label' ) ); ?>
+                    
+                    <div class="col-lg-10">
+                        <?php echo Form::text( "settings[$item->id]" , Input::old( "settings[$item->id]" , $item->value ) , array( 'class'=>'form-control' , 'placeholder'=>$item->label ) ); ?>
+                    </div>
+                </div>
+
+            <?php endforeach; ?>
+
+            <?php echo Form::submit('Save Settings' , array('class'=>'btn btn-large btn-primary pull-right')); ?>
+
+        <?php echo Form::close(); ?>
+    <?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('laravel-bootstrap::layouts.interface', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

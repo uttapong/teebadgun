@@ -1,0 +1,7 @@
+<div class="post">
+	<h1><a href="<?php echo Wardrobe::route('posts.show', $post->slug); ?>"><?php echo $post->title; ?></a></h1>
+	<div class="date"><?php echo date("M/d/Y", strtotime($post->publish_date)); ?></div>
+	<div class="content">
+		<?php echo $post->parsed_intro; ?>
+	</div>
+</div>

@@ -1,0 +1,11 @@
+<div class="col-md-12 center stat-block">
+	
+	<div id="stat-value-block" class="shadow" style="height: 250px !important;">
+		<div class="stat-row"><a href="<?php echo route('forums'); ?>"><span class="stat-label forums-stat">กระทู้ทั้งหมด</span><span class="stat-value label label-info"><?php echo $all_cat_count; ?></span></a></div>
+		<div class="stat-row"><a href="<?php echo route('category',array(3)); ?>"><span class="stat-label forums-stat">เรื่องทั่วไป</span><span class="stat-value label label-info"><?php echo $general_cat_count; ?></span></a></div>
+		<div class="stat-row"><a href="<?php echo route('category',array(4)); ?>"><span class="stat-label forums-stat">อุปกรณ์แบดมินตัน</span><span class="stat-value label label-info"><?php echo $review_cat_count; ?></span></a></div>
+		<div class="stat-row"><a href="<?php echo route('category',array(6)); ?>"><span class="stat-label forums-stat">ตลาดซื้อขาย</span><span class="stat-value label label-info"><?php echo $market_cat_count; ?></span></a></div>
+		<div class="stat-row"><a href="<?php echo route('category',array(5)); ?>"><span class="stat-label forums-stat">ประกาศ/แจ้งปัญหา</span><span class="stat-value label label-info"><?php echo $support_cat_count; ?></span></a></div>
+		
+	</div>
+</div>

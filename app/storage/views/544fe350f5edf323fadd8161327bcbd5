@@ -1,0 +1,18 @@
+
+<?php $__env->startSection('title'); ?>
+    <?php echo $app_name; ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+
+    <h1>Welcome To <?php echo $app_name; ?></h1>
+    <p>Manage content for your website, including but not limited to:</p>
+    <ul>
+        <li>Posts</li>
+        <li>Content Blocks</li>
+        <li>Image Galleries</li>
+        <li>And More!</li>
+    </ul>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('laravel-bootstrap::layouts.interface', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

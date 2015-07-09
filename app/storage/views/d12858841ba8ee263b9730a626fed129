@@ -1,0 +1,32 @@
+
+<?php $__env->startSection('title'); ?>
+    Create New Image Gallery
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('heading'); ?>
+    <h1>Create New Image Gallery</h1>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('form-items'); ?>
+
+    <div class="form-group">
+        <?php echo Form::label( "title" , 'Gallery Title' , array( 'class'=>'col-lg-2 control-label' ) ); ?>
+        <div class="col-lg-10">
+            <?php echo Form::text( "title" , Input::old( "title" ) , array( 'class'=>'form-control' , 'placeholder'=>'Gallery Title' ) ); ?>
+        </div>
+    </div>
+    <div class="form-group">
+        <?php echo Form::label( "slug" , 'Gallery Key' , array( 'class'=>'col-lg-2 control-label' ) ); ?>
+        <div class="col-lg-10">
+            <?php echo Form::text( "slug" , Input::old( "slug" ) , array( 'class'=>'form-control' , 'placeholder'=>'Gallery Slug' ) ); ?>
+        </div>
+    </div>
+    <div class="form-group">
+        <?php echo Form::label( "description" , 'Gallery Content' , array( 'class'=>'col-lg-2 control-label' ) ); ?>
+        <div class="col-lg-10">
+            <?php echo Form::textarea( "description" , Input::old( "description" ) , array( 'class'=>'form-control rich' , 'placeholder'=>'Gallery Description' ) ); ?>
+        </div>
+    </div>
+    
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('laravel-bootstrap::layouts.interface-new', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

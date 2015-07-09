@@ -1,0 +1,124 @@
+<?php $__env->startSection('title'); ?>
+<?php echo $team->name; ?> : ตีแบดกันดอทคอม เพราะเราเข้าใจคนเล่นแบดมินตัน
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+<script>
+</script>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('style'); ?>
+<style>
+.well{
+  margin:0px 20px 5px 0px  !important;
+  padding:10px !important;
+}
+</style>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+
+<div class="row">
+<?php if(Session::has('message')): ?>
+    <?php echo Session::get('message'); ?>
+<?php endif; ?>
+  <div class="col-md-12 profile-header">
+    
+
+    <div class='row'>
+        <div class="col-md-3 left">
+          <h1>ชื่อทีมแบดมินตัน: <?php echo $team->name; ?></h1>
+          <?php if($team->logo): ?>
+          <img src="<?php echo asset('uploads/teams/'); ?>/<?php echo $team->id; ?>/<?php echo $team->logo; ?>" class="profile-image" />
+          <?php else: ?>
+          <img src="<?php echo asset('assets/images/unknow.png'); ?>" class="profile-image" />
+          <?php endif; ?>
+          <p>
+          <?php if(Auth::user()&&!$team->checkJoined()): ?>
+            <a href="<?php echo route('jointeam',array($team->id)); ?>" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-plus"></span> เข้าร่วมเป็นสมาชิก</a>
+           <?php elseif(Auth::user()): ?>
+           <button  class="btn btn-info btn-lg" disabled="disabled"><span class="glyphicon glyphicon-plus"></span> เป็นสมาชิกแล้ว</button>
+            <?php endif; ?>  
+            </p>
+             <?php if($team->checkPermission()): ?>
+            <p>
+            
+            <a href="<?php echo route('editteam',array($team->id)); ?>" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-edit"></span> แก้ไขข้อมูลทีม</a>
+            
+            <a href="<?php echo route('removeteam',array($team->id)); ?>" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-ban-circle"></span> ลบทีม</a>
+            
+            <?php endif; ?>
+            <a href="<?php echo route('reportteam',array($team->id)); ?>" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-bullhorn"></span> แจ้งซ้ำ</a>
+            </p>
+        </div>
+        <div class="col-md-3 left">
+          <h2>หัวหน้าทีม</h2>
+          <?php foreach($team->managers->all() as $manager): ?>
+          <div class='well'>
+            <div class="media">
+            <?php if($manager->getUser()): ?>
+              <a class="pull-left" href="<?php echo route('profile',array($manager->getUser()->username)); ?>">
+            <?php else: ?>
+              <span class="pull-left">
+            <?php endif; ?>
+                 <?php if($manager->getUser()): ?>
+                <img style="width:50px" class="media-object" src="<?php echo $manager->getUser()->picture; ?>" alt="...">
+                <?php else: ?>
+                <img style="width:50px" src="<?php echo asset('assets/images/guest.jpg');; ?>"  />
+                <?php endif; ?>
+              <?php if($manager->getUser()): ?>
+              </a>
+              <?php else: ?>
+              </span>
+              <?php endif; ?>
+              <div class="media-body">
+              <?php if($manager->getUser()): ?>
+                <h2 style="margin:0px;"><?php echo $manager->getUser()->username; ?></h2>
+                <h5 class="media-heading"><?php echo $manager->getUser()->firstname; ?> <?php echo $manager->getUser()->lastname; ?></h5>
+              <?php else: ?>
+                <h2 style="margin:0px;"><?php echo $manager->nonmember_name; ?></h2>
+                <h5 class="media-heading"></h5>
+
+              <?php endif; ?>
+              </div>
+            </div>
+          </div>
+          <?php endforeach; ?>
+        </div>
+        <div class="col-md-3 left">
+          <h2>สถานที่ตีแบด</h2>
+           <?php foreach($team->opendays as $day): ?>
+          <div class='well'>
+            <a href="<?php echo route('gym',array($day->gym,$day->getGymName())); ?>">
+            <h2><i class="fa fa-map-marker fa-lg"></i> <?php echo $day->getGymName(); ?></h2>
+            <p><span style='font-size:1.2rem;' class="label label-danger"><?php echo $day->getDay(); ?></span> ตั้งแต่เวลา <?php echo $day->start_time; ?> - <?php echo $day->end_time; ?></p>
+            <p>วิธีเล่น <?php echo $day->payment; ?></p>
+            <p></p>
+            </a>
+          </div>
+          <?php endforeach; ?>
+        </div>
+        <div class="col-md-3 left">
+          
+            <h2>คำขวัญ</h2>
+            <p><?php echo $team->motto; ?></p>
+           <h2>เกี่ยวกับทีม</h2>
+           <p>ติดต่อ <?php echo $team->tel; ?></p>
+           <p><?php echo $team->descript; ?></p>
+        </div>
+    </div>
+  
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 left">
+  <h1>สมาชิกในทีม</h1>
+  <?php foreach($team->members as $member): ?>
+
+    <div class='profile-team-icon'><a href='<?php echo route('home'); ?>/profile/<?php echo $member->user()->username; ?>'>
+    <p><img src='<?php echo $member->user()->picture; ?>'/></p>
+    <h5><?php echo $member->user()->firstname; ?> <?php echo $member->user()->lastname; ?></h5>
+    </a></div>
+  <?php endforeach; ?>
+  </div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,25 @@
+
+<?php $__env->startSection('title'); ?>
+	Admin
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+	<div id="main-region"></div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('footer.js'); ?>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			Wardrobe.start({
+				user: <?php echo $user; ?>,
+				users: <?php echo $users; ?>,
+				api_url: "<?php echo route('wardrobe.api.index'); ?>",
+				admin_url: "<?php echo route('wardrobe.admin.index'); ?>",
+				blog_url: "<?php echo route('wardrobe.index'); ?>",
+			});
+		});
+		window.Lang = {<?php foreach($locale as $key => $item): ?> <?php echo $key; ?>: "<?php echo $item; ?>", <?php endforeach; ?>}
+	</script>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('core::admin.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

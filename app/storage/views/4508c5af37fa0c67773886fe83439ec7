@@ -1,0 +1,20 @@
+<?php $__env->startSection('title'); ?>
+Teebadgun.com : เกี่ยวกับเรา
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+<script>
+</script>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('style'); ?>
+
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>ตีแบดกันดอทคอม</h1>
+    <p><?php echo $about->content; ?></p>
+  </div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

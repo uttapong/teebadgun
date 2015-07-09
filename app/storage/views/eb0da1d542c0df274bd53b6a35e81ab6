@@ -1,0 +1,24 @@
+<?php $__env->startSection('content'); ?>
+
+	<h1><?php echo Lang::get('gallery::gallery.overview') . ' ' . Lang::choice('gallery::gallery.album', 1) . ': ' . $album->album_name; ?></h1>
+
+	<?php echo Form::open(array('method' => 'DELETE', 'url' => array('gallery/album', $album->album_id))); ?>
+		<?php echo link_to("gallery/edit/album/$album->album_id", Lang::get('gallery::gallery.edit'), array('class' => 'btn btn-info')); ?>
+	    <?php echo Form::submit(Lang::get('gallery::gallery.delete'), array('class' => 'btn btn-danger')); ?>
+    <?php echo Form::close(); ?>
+    
+	<?php if ($albumPhotos->count()): ?>
+		<dl>
+		<?php foreach($albumPhotos as $photo): ?>
+			<dt><h3><?php echo link_to("gallery/photo/$photo->photo_id", $photo->photo_name); ?></h3></dt>
+			<dd><p class="lead indent"><?php echo $photo->photo_description; ?></p></dd>
+		<?php endforeach; ?>
+
+	<?php echo $albumPhotos->links(); ?>
+		</dl>
+
+	<?php else: ?>
+    	<?php echo Lang::get('gallery::gallery.none') . Lang::choice('gallery::gallery.photo', 2); ?>
+	<?php endif; ?>
+
+<?php $__env->stopSection(); ?>

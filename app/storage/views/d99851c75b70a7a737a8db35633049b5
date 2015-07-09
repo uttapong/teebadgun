@@ -1,0 +1,18 @@
+
+<?php $__env->startSection('main'); ?>
+
+<h1>ADMIN groups</h1>
+
+<?php echo $group->title; ?>
+
+<h3>Permissions</h3>
+
+<ul>
+<?php foreach ($group->permissions as $permission): ?>
+	<li><?php echo $permission->name; ?></li>
+<?php endforeach; ?>
+</ul>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('fluxbb::admin.layout.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

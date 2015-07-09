@@ -1,0 +1,29 @@
+<?php $__env->startSection('title'); ?>
+Teebadgun.com : เกี่ยวกับเรา
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+<script>
+</script>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('style'); ?>
+<style>
+.container{
+	max-width: 90% !important;
+}
+</style>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+
+<div class="row">
+  <div class="col-md-12">
+    <script type="text/javascript" src="http://teebadgun.com:80/forums/js/embed.js"></script>
+<noscript>Please enable JavaScript to view the <a href="http://vanillaforums.com/?ref_noscript">discussions powered by Vanilla.</a></noscript>
+<div class="vanilla-credit"><a class="vanilla-anchor" href="http://vanillaforums.com">Discussions by <span class="vanilla-logo">Vanilla</span></a></div>
+  </div>
+</div>
+
+
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

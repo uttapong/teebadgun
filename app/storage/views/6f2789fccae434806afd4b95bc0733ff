@@ -1,0 +1,32 @@
+
+<?php $__env->startSection('title'); ?>
+    Create New Content Blocks
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('heading'); ?>
+    <h1>Create New Content Block</h1>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('form-items'); ?>
+
+    <div class="form-group">
+        <?php echo Form::label( "title" , 'Block Title' , array( 'class'=>'col-lg-2 control-label' ) ); ?>
+        <div class="col-lg-10">
+            <?php echo Form::text( "title" , Input::old( "title" ) , array( 'class'=>'form-control' , 'placeholder'=>'Block Title' ) ); ?>
+        </div>
+    </div>
+    <div class="form-group">
+        <?php echo Form::label( "key" , 'Block Key' , array( 'class'=>'col-lg-2 control-label' ) ); ?>
+        <div class="col-lg-10">
+            <?php echo Form::text( "key" , Input::old( "key" ) , array( 'class'=>'form-control' , 'placeholder'=>'Block Key' ) ); ?>
+        </div>
+    </div>
+    <div class="form-group">
+        <?php echo Form::label( "content" , 'Block Content' , array( 'class'=>'col-lg-2 control-label' ) ); ?>
+        <div class="col-lg-10">
+            <?php echo Form::textarea( "content" , Input::old( "content" ) , array( 'class'=>'form-control rich' , 'placeholder'=>'Block Content' ) ); ?>
+        </div>
+    </div>
+    
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('laravel-bootstrap::layouts.interface-new', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,9 @@
+<ul class="nav nav-tabs">
+    <li><a href="#main" data-toggle="tab">Main</a></li>
+    <?php if( isset($uploadable) and $uploadable ): ?>
+        <li><a href="#images" data-toggle="tab">Images</a></li>
+    <?php endif; ?>
+    <?php if( isset($taggable) and $taggable ): ?>
+        <li><a href="#tagging" data-toggle="tab">Tags</a></li>
+    <?php endif; ?>
+</ul>

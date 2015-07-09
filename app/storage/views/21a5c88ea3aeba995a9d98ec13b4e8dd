@@ -1,0 +1,14 @@
+
+<?php $__env->startSection('main'); ?>
+
+	<h2>Run</h2>
+
+	<form method="POST">
+		<p>You're ready to run the FluxBB installation.</p>
+		<p>TODO: Review information here.</p>
+		<input type="submit" value="Continue" />
+	</form>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('fluxbb_installer::layout.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

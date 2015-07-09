@@ -1,0 +1,7 @@
+[2013-12-10 13:05:25] log.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "bundle" namespace.' in /Users/winnie/Documents/htdocs/laravel/vendor/symfony/console/Symfony/Component/Console/Application.php:523
+Stack trace:
+#0 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/console/Symfony/Component/Console/Application.php(561): Symfony\Component\Console\Application->findNamespace('bundle')
+#1 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/console/Symfony/Component/Console/Application.php(188): Symfony\Component\Console\Application->find('bundle:install')
+#2 /Users/winnie/Documents/htdocs/laravel/vendor/symfony/console/Symfony/Component/Console/Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/winnie/Documents/htdocs/laravel/artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []

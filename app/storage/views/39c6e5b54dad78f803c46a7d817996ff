@@ -1,0 +1,144 @@
+<?php $__env->startSection('title'); ?>
+Teebadgun.com : เพราะเราเข้าใจคนเล่นแบดมินตัน
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+    <script>
+$( document ).ready(function( ) {
+<?php if($badge): ?>
+showBadge(<?php echo $badge->id; ?>,'<?php echo $badge->name; ?>','<?php echo $badge->desc; ?>');
+<?php endif; ?>
+
+});
+
+function showBadge(id,name,desc){
+
+  var content="<div class='userbadge'>"+
+  "<img src='<?php echo route('home'); ?>assets/images/badge/"+id+".png' />"+
+  "<h2>ขอแสดงความยินดีคุณได้รับเหรียญ '"+name+"'</h2>"+
+  "<p>"+desc+"</p>"+
+  "</div>";
+  bootbox.alert(content, function() {
+  });
+}
+
+
+    </script>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+<?php if (Auth::user()): ?>
+<div class="row">
+<?php if(Session::has('message')): ?>
+    <?php echo Session::get('message'); ?>
+<?php endif; ?>
+  <div class="col-md-12 profile-header">
+    
+
+    <div class='row'>
+        <div class="col-md-3 left">
+          <h1><?php echo Auth::user()->firstname; ?> <?php echo Auth::user()->lastname; ?></h1>
+          <div class="row">
+            <div class="col-md-3 left">
+            <?php if(Auth::user()->picture): ?>
+            <img src="<?php echo Auth::user()->picture; ?>" class="profile-image-s" />
+            <?php else: ?>
+            <img src="<?php echo asset('assets/images/guest.jpg');; ?>" class="profile-image-s" />
+            <?php endif; ?>
+            </div>
+            <div class="col-md-9 left">
+            <ul>
+              <li><span class="glyphicon glyphicon-envelope"></span> <?php echo Auth::user()->email; ?></li>
+              <li><span class="glyphicon glyphicon-map-marker"></span> จังหวัด 
+              <?php if(Auth::user()->province): ?>
+              <?php echo Auth::user()->province()->name; ?>
+              <?php endif; ?></li>
+              <li>
+                <?php if(Auth::user()->fb_id): ?>
+             <a href="<?php echo Auth::user()->link; ?>" target='_blank' class='btn btn-primary btn-xs' ><i class="fa fa-facebook-square fa-lg"></i> Facebook Connected</a>
+            <?php else: ?>
+            <button onclick="connectFB();" class='btn btn-primary btn-xs' ><i class="fa fa-facebook-square fa-lg"></i> เชื่อมต่อ Facebook</button>
+            <?php endif; ?>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 left">
+          <h2>สังกัดทีม</h2>
+          <?php foreach(Auth::user()->teams as $team): ?>
+            <div class='team-icon'><a href='<?php echo route('team',array($team->team->id)); ?>'>
+            <p><img src='<?php echo $team->team->logo; ?>'/>
+            <h5><?php echo $team->team->name; ?></h5></p>
+            </a></div>
+          <?php endforeach; ?>
+        </div>
+        <div class="col-md-3 left">
+          <h2>ลายเซ็นต์</h2>
+          <?php echo Auth::user()->signature; ?>
+        </div>
+        <div class="col-md-3 left">
+           <h2>เหรียญรางวัล</h2>
+            <?php foreach(Auth::user()->userbadges as $userbadge): ?>
+            <div class='badge-icon'><a href='javascript:void(0);' onclick='showBadge(<?php echo $userbadge->badge->id; ?>,"<?php echo $userbadge->badge->name; ?>","<?php echo $userbadge->badge->desc; ?>")'>
+            <p><img src='<?php echo asset('assets/images/badge/'.$userbadge->badge->id.'.png'); ?>' alt="<?php echo $userbadge->badge->name; ?>"/></p>
+            </a></div>
+          <?php endforeach; ?>
+        </div>
+    </div>
+  
+  </div>
+</div>
+  <?php endif; ?>
+<div class="row">
+  <div class="col-md-2 left">
+	<div class="row">
+		<?php echo $__env->make('forumsmenu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	</div>
+  </div>
+  <div class="col-md-10 left">
+  
+  
+  <h1 class="title">ตั้งกระทู้ใหม่ : หัวข้อ <?php echo $catinfo->title; ?></h1>
+  <div class="row">
+    
+        <div class="col-md-12 left">
+            <div id="open-team">
+                         <?php echo Form::open(array('url' => 'forums/insert','method'=>'post','id'=>'addtopic','role'=>'form','class'=>'form-horizontal')); ?>
+              <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">ชื่อเรื่อง</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control"  name='title'>
+                </div>
+              </div>
+
+               <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">ข้อความ</label>
+                <div class="col-sm-8">
+                   <textarea class="form-control" name='content' rows="3"></textarea>
+                </div>
+              </div>
+             
+             
+              
+              <div class="form-group">
+
+                <div class="col-sm-offset-2 col-sm-8">
+                  <button type="submit" class="btn btn-default">ตั้งกระทู้</button>
+                </div>
+              </div>
+          <?php echo Form::close(); ?>
+            </div>
+        </div>
+            
+  </div>
+  
+  </div>
+</div>
+
+
+
+
+
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

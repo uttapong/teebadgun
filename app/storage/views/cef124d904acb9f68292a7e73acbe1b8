@@ -1,0 +1,27 @@
+
+<?php $__env->startSection('main'); ?>
+
+<ul>
+<?php foreach ($categories as $cat_info): ?>
+<?php $category = $cat_info['category']; ?>
+	<li>
+		<?php echo $category->cat_name; ?>
+		<ul>
+<?php foreach ($cat_info['forums'] as $forum): ?>
+			<li>
+				<a href="<?php echo route('viewforum', array('id' => $forum->id)); ?>"><?php echo $forum->forum_name; ?></a>
+				<em><?php echo $forum->forum_desc; ?></em>
+				<ul>
+					<li><?php echo $forum->numTopics(); ?> topics</li>
+					<li><?php echo $forum->numPosts(); ?> posts</li>
+				</ul>
+			</li>
+<?php endforeach; ?>
+		</ul>
+	</li>
+<?php endforeach; ?>
+</ul>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('fluxbb::layout.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

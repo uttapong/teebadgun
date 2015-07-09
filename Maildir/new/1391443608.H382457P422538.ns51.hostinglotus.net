@@ -1,0 +1,40 @@
+Return-path: <>
+Envelope-to: teebadgu@teebadgun.com
+Delivery-date: Mon, 03 Feb 2014 23:06:48 +0700
+Received: from mail by ns51.hostinglotus.net with local (Exim 4.80.1)
+	id 1WAM2q-001lv3-Ay
+	for teebadgu@teebadgun.com; Mon, 03 Feb 2014 23:06:48 +0700
+X-Failed-Recipients: aof_arashi@hotmail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@ns51.hostinglotus.net>
+To: teebadgu@teebadgun.com
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1WAM2q-001lv3-Ay@ns51.hostinglotus.net>
+Date: Mon, 03 Feb 2014 23:06:48 +0700
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  aof_arashi@hotmail.com
+    SMTP error from remote mail server after MAIL FROM:<teebadgu@teebadgun.com> SIZE=1517:
+    host mx4.hotmail.com [65.55.92.184]: 550 SC-001 (SNT0-MC4-F28) Unfortunately, messages from 122.155.18.51 weren't sent. Please contact your Internet service provider since part of their network is on our block list. You can also refer your provider to http://mail.live.com/mail/troubleshooting.aspx#errors.
+
+------ This is a copy of the message, including all the headers. ------
+
+Return-path: <teebadgu@teebadgun.com>
+Received: from apache by ns51.hostinglotus.net with local (Exim 4.80.1)
+	(envelope-from <teebadgu@teebadgun.com>)
+	id 1WAM2n-001lus-AB; Mon, 03 Feb 2014 23:06:45 +0700
+To: uttapong@gmail.com
+Subject: adfadf
+X-PHP-Originating-Script: 1172:Contact-form.php
+Content-type: text/html; charset=utf-8
+From: adf<uttapong@ymail.com>
+Reply-To: uttapong@ymail.com
+Cc: aof_arashi@hotmail.com
+Message-Id: <E1WAM2n-001lus-AB@ns51.hostinglotus.net>
+Date: Mon, 03 Feb 2014 23:06:45 +0700
+
+adfadf

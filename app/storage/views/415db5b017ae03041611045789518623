@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="<?php echo asset('favicon.ico'); ?>">
+
+<title><?php echo $__env->yieldContent('title', 'Teebadgun.com'); ?></title>
+
+<!-- Bootstrap core CSS -->
+
+<link href="<?php echo asset('assets/css/bootstrap.css'); ?>" rel="stylesheet">
+<link href="<?php echo asset('assets/css/teebadgun.css'); ?>" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300,100' rel='stylesheet' type='text/css'>
+<link href="<?php echo asset('assets/css/font-awesome.css'); ?>" rel="stylesheet">
+<link href="<?php echo asset('assets/css/bootstrap-datetimepicker.min.css'); ?>" rel="stylesheet">
+<link href="<?php echo asset('assets/css/bootstrap-formhelpers.min.css'); ?>" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<script src="<?php echo asset('assets/js/jquery.js'); ?>"></script>
+<script src="<?php echo asset('assets/js/bootstrap-formhelpers.min.js'); ?>"></script>
+<script src="<?php echo asset('assets/js/bootstrap-datetimepicker.min.js'); ?>"></script>
+<script src="<?php echo asset('assets/js/jquery-ui.min.js'); ?>"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<?php $__env->startSection('script'); ?>
+<?php echo $__env->yieldSection(); ?>
+<?php $__env->startSection('style'); ?>
+<?php echo $__env->yieldSection(); ?>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '612396988819496',                        // App ID from the app dashboard
+      status     : true,                                 // Check Facebook Login status
+      xfbml      : true,                                  // Look for social plugins on the page
+      cookie	:true
+    });
+
+    // Additional initialization code such as adding Event Listeners goes here
+  };
+
+  // Load the SDK asynchronously
+  (function(){
+     // If we've already installed the SDK, we're done
+     if (document.getElementById('facebook-jssdk')) {return;}
+
+     // Get the first script element, which we'll use to find the parent node
+     var firstScriptElement = document.getElementsByTagName('script')[0];
+
+     // Create a new script element and set its id
+     var facebookJS = document.createElement('script'); 
+     facebookJS.id = 'facebook-jssdk';
+
+     // Set the new script's source to the source of the Facebook JS SDK
+     facebookJS.src = '//connect.facebook.net/en_US/all.js';
+
+     // Insert the Facebook JS SDK into the DOM
+     firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
+   }());
+function loginFB(){
+	FB.login(function(response) {
+   if (response.authResponse) {
+     console.log('กำลังดึงข้อมูลจาก Facebook');
+     FB.api('/me', function(response) {
+       location.href='<?php echo route('fbsignin'); ?>';
+     });
+   } else {
+     console.log('User cancelled login or did not fully authorize.');
+     location.href='<?php echo route('home'); ?>';
+   }
+  // location.href='<?php echo route('home'); ?>';
+ },{scope: 'email,publish_actions,publish_stream'});
+	
+}
+
+function connectFB(){
+  FB.login(function(response) {
+   if (response.authResponse) {
+     console.log('กำลังดึงข้อมูลจาก Facebook');
+     FB.api('/me', function(response) {
+       location.href='<?php echo route('fbconnect'); ?>';
+     });
+   } else {
+     console.log('User cancelled login or did not fully authorize.');
+     location.href='<?php echo route('home'); ?>';
+   }
+  // location.href='<?php echo route('home'); ?>';
+ },{scope: 'email,publish_actions,publish_stream'});
+}
+</script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=612396988819496";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="tb_nav">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="<?php echo route('home'); ?>"><img  src="<?php echo asset('assets/images/teebadgun_logo_s.png');; ?>" /></a>
+</div>
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<?php $__env->startSection('menu'); ?>
+<li class="active"><a href="<?php echo route('home'); ?>where">ตีที่ไหน</a></li>
+<li><a href="<?php echo route('home'); ?>webboard">เว็บบอร์ด</a></li>
+<li><a href="<?php echo route('news'); ?>">ข่าว</a></li>
+<li><a href="<?php echo route('article'); ?>">บทความ</a></li>
+<li><a href="<?php echo route('announcement'); ?>">รายการแข่งขัน</a></li>
+<?php if (Auth::user()): ?>
+<li><a href="<?php echo route('home'); ?>profile">ส่วนตัว</a></li>
+<?php endif; ?>
+<li><a href="<?php echo route('home'); ?>about">เกี่ยวกับเรา</a></li>
+
+<?php echo $__env->yieldSection(); ?>
+</ul>
+<div class='login-info'>
+<?php if (Auth::user()): ?>
+    <p class='user-info'><a href=""><?php echo Auth::user()->firstname; ?> <?php echo Auth::user()->lastname; ?></a>
+    <buton onclick='window.location.href="<?php echo route('logout');; ?>"' class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-log-out"></span> ออกจากระบบ</button>
+    </p>
+<?php else: ?>
+  <a href='<?php echo action('UserController@login');; ?>' class='' >เข้าสู่ระบบ</a>
+  <button onclick="loginFB();" class='btn btn-primary btn-xs' ><i class="fa fa-facebook-square fa-lg"></i> Facebook Signin</button>
+  <buton onclick='window.location.href="<?php echo action('UserController@signup');; ?>"' class="btn btn-success btn-xs"><span class="glyphicon glyphicon-user"></span> สมัครสมาชิก</button>
+<?php endif; ?>
+</div>
+</div><!--/.nav-collapse -->
+
+</div>
+
+<div class="container">
+<?php $__env->startSection('content'); ?>
+
+<?php echo $__env->yieldSection(); ?>
+  <div class="row">
+    <div class="col-md-12 footer">
+      &copy; Copyright 2013 Teebadgun.com. Created by <a href='http://www.modern-design.in.th'>Modern Design</a>.
+    </div>
+  </div>
+</div><!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="<?php echo asset('assets/js/bootstrap.min.js'); ?>"></script>
+<script src="<?php echo asset('assets/js/bootbox.min.js'); ?>"></script>
+</body>
+</html>

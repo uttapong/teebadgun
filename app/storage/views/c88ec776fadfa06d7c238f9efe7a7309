@@ -1,0 +1,54 @@
+
+<?php $__env->startSection('main'); ?>
+
+<a href="<?php echo route('new_topic', array('id' => $forum->id)); ?>"><?php echo trans('fluxbb::forum.post_topic'); ?></a>
+
+<h2><?php echo ($forum->forum_name); ?></h2>
+
+<table cellspacing="0">
+	<thead>
+		<tr>
+			<th scope="col">Topic</th>
+			<th scope="col"><?php echo trans('fluxbb::common.replies'); ?></th>
+			<th scope="col"><?php echo trans('fluxbb::forum.views'); ?></th> <!-- TODO: Only show if o_topic_views is enabled -->
+			<th scope="col"><?php echo trans('fluxbb::common.last_post'); ?></th>
+		</tr>
+	</thead>
+	<tbody>
+
+<?php $topic_count = 0; ?>
+<?php foreach ($forum->topics as $topic): ?>
+<?php
+
+$topic_count++;
+$icon_type = 'icon';
+if (FluxBB\Models\User::current()->isMember() && $topic->last_post > FluxBB\Models\User::current()->last_visit && (!isset($tracked_topics['topics'][$topic->id]) || $tracked_topics['topics'][$topic->id] < $topic->last_post) && (!isset($tracked_topics['forums'][$forum->id]) || $tracked_topics['forums'][$forum->id] < $topic->last_post) && is_null($topic->moved_to))
+{
+	// TODO: For obvious reasons, this if statement should not be here in the view (in that form)
+	$icon_type = 'icon icon-new';
+}
+
+?>
+		<tr>
+			<td>
+				<a href="<?php echo route('viewtopic', array('id' => $topic->id)); ?>"><?php echo ($topic->subject); ?></a> <?php echo trans('fluxbb::common.by', array('author' => ($topic->poster))); ?>
+			</td>
+			<td><?php echo $topic->numReplies(); ?></td>
+			<td><?php echo $topic->numViews(); ?></td> <!-- TODO: Only show if o_topic_views is enabled -->
+	<?php if ($topic->wasMoved()): ?>
+			<td>- - -</td>
+	<?php else: ?>
+			<!-- TODO: Pass $last_post instead of $topic to url() -->
+			<td><a href="<?php echo route('viewpost', array('id' => $topic->id)); ?>#p<?php echo $topic->last_post_id; ?>"><?php echo ($topic->last_post); ?></a> <span class="byuser"><?php echo trans('fluxbb::common.by', array('author' => ($topic->last_poster))); ?></span></td><?php /*  TODO: format_time for last_post  */ ?>
+	<?php endif; ?>
+		</tr>
+<?php endforeach; ?>
+
+	</tbody>
+</table>
+
+<a href="<?php echo route('new_topic', array('id' => $forum->id)); ?>"><?php echo trans('fluxbb::forum.post_topic'); ?></a>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('fluxbb::layout.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

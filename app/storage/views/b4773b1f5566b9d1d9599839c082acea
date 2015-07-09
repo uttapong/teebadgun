@@ -1,0 +1,15 @@
+<?php $__env->startSection('content'); ?>
+
+<h1><?php echo Lang::get('gallery::gallery.create') . ' ' . Lang::choice("gallery::gallery.$type", 1); ?></h1>
+
+<?php echo $form; ?>
+
+<?php if ($errors->any()): ?>
+    <ul>
+        <?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+    </ul>
+<?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+
+

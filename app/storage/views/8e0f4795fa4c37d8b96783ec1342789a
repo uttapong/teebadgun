@@ -1,0 +1,71 @@
+<?php $__env->startSection('title'); ?>
+Teebadgun.com : เพราะเราเข้าใจคนเล่นแบดมินตัน
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+    <script>
+$( document ).ready(function( ) {
+<?php if($badge): ?>
+showBadge(<?php echo $badge->id; ?>,'<?php echo $badge->name; ?>','<?php echo $badge->desc; ?>');
+<?php endif; ?>
+
+});
+
+function showBadge(id,name,desc){
+
+  var content="<div class='userbadge'>"+
+  "<img src='<?php echo route('home'); ?>assets/images/badge/"+id+".png' />"+
+  "<h2>ขอแสดงความยินดีคุณได้รับเหรียญ '"+name+"'</h2>"+
+  "<p>"+desc+"</p>"+
+  "</div>";
+  bootbox.alert(content, function() {
+  });
+}
+
+
+    </script>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+<?php echo $breadcrumbs; ?>
+<div class="row">
+  <div class="col-md-2 left">
+  <?php if(Session::has('message')): ?>
+    <?php echo Session::get('message'); ?>
+<?php endif; ?>
+ <h1> <i class="fa fa-comment"></i> เว็บบอร์ด</h1>
+	<div class="row">
+		<?php echo $__env->make('forumsmenu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	</div>
+  </div>
+  <div class="col-md-10 left">
+  
+  
+  <div class="row">
+    <div class="col-md-12 left">
+                <h1 class="title">กระดานสนทนาทั้งหมด</h1>
+        </div>
+        <div class="col-md-12 left">
+            <div id="open-team">
+                <ul>
+                  <?php foreach($all_cat as $cat): ?>
+                    <li class="open-team">
+                    <a href="<?php echo route('category',array($cat->id,$cat->title)); ?>">
+                   
+                    <h3><span class="glyphicon glyphicon-comment"></span> <?php echo $cat->title; ?></h3>
+                    <p><?php echo $cat->desc; ?></p></a></li>
+                  <?php endforeach; ?>
+                </ul>
+            </div>
+        </div>
+  </div>
+  
+  </div>
+</div>
+
+
+
+
+
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

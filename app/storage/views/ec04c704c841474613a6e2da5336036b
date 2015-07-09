@@ -1,0 +1,35 @@
+
+<?php $__env->startSection('title'); ?>
+	<?php echo Lang::get('core::wardrobe.login'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+	<div id="login-region">
+		<h1><?php echo Lang::get('core::wardrobe.login'); ?></h1>
+		<?php if (Session::has('login_errors')): ?>
+		<div class="alert alert-block alert-error">
+			<p>
+				<?php echo Lang::get('core::wardrobe.login_incorrect'); ?> <a href="<?php echo url('wardrobe/login/remind'); ?>"><?php echo Lang::get('core::wardrobe.login_forgot'); ?></a>
+			</p>
+		</div>
+		<?php endif; ?>
+		<form method="post" action="<?php echo route('wardrobe.admin.login'); ?>" class="form-horizontal">
+			<p>
+				<input type="text" id="inputEmail" name="email" placeholder="<?php echo Lang::get('core::wardrobe.login_email'); ?>" value="<?php echo Input::old('email'); ?>">
+			</p>
+			<p>
+				<input type="password" id="inputPassword" name="password" placeholder="<?php echo Lang::get('core::wardrobe.login_password'); ?>">
+			</p>
+			<p>
+				<label class="checkbox"><input type="checkbox" name="remember"> <?php echo Lang::get('core::wardrobe.login_remember'); ?></label>
+			</p>
+			<button type="submit" class="btn"><?php echo Lang::get('core::wardrobe.login_sign_in'); ?></button>
+		</form>
+	</div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('footer.js'); ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('core::admin.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

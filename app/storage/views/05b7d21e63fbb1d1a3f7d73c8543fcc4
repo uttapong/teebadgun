@@ -1,0 +1,49 @@
+
+<?php $__env->startSection('title'); ?>
+    Manage Image Galleries
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+
+    <h1>Manage Image Galleries</h1>
+    <p>Image galleries are images separated into their own little section.</p>
+    
+
+    <?php /*  The error / success messaging partial  */ ?>
+    <?php echo $__env->make('laravel-bootstrap::partials.messaging', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    
+    <?php if( !$items->isEmpty() ): ?>
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Slug</th>
+                    <th>Created</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($items as $item): ?>
+                    <tr>
+                        <td><a href="<?php echo $edit_url.$item->id; ?>"><?php echo $item->id; ?></a></td>
+                        <td><a href="<?php echo $edit_url.$item->id; ?>"><?php echo $item->title; ?></a></td>
+                        <td><a href="<?php echo $edit_url.$item->id; ?>"><?php echo $item->slug; ?></a></td>
+                        <td><a href="<?php echo $edit_url.$item->id; ?>"><?php echo $item->created_at; ?></a></td>
+                        <td>
+                            <div class="pull-right">
+                                <a href="<?php echo $edit_url.$item->id; ?>" class="btn btn-sm btn-primary">Edit Item</a> <a href="<?php echo $delete_url.$item->id; ?>" class="btn btn-sm btn-danger">Delete Item</a>
+                            </div>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    <?php else: ?>
+        <div class="alert alert-info">
+            <strong>No Items Yet:</strong> You don't have any items here just yet. Add one using the button below.
+        </div>
+    <?php endif; ?>
+    <a href="<?php echo $new_url; ?>" class="btn btn-primary pull-right">New Item</a>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('laravel-bootstrap::layouts.interface', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

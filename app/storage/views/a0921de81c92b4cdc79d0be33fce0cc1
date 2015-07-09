@@ -1,0 +1,17 @@
+<?php if( $errors->all() ): ?>
+    <div class="alert alert-danger">
+        <p><strong>Whoops! There was a problem.</strong></p>
+        <?php foreach ($errors->all('<p>:message</p>') as $msg): ?>
+            <?php echo $msg; ?>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>
+
+<?php if( $success->all() ): ?>
+    <div class="alert alert-success">
+        <p><strong>Success!</strong></p>
+        <?php foreach ($success->all('<p>:message</p>') as $msg): ?>
+            <?php echo $msg; ?>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>

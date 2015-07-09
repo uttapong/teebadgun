@@ -1,0 +1,19 @@
+
+<?php $__env->startSection('content'); ?>
+
+
+    <?php echo $__env->yieldContent('heading'); ?>
+
+    <?php echo Form::open( array( 'url'=>$new_url , 'class'=>'form-horizontal form-top-margin' , 'role'=>'form' ) ); ?>
+
+        <?php /*  The error / success messaging partial  */ ?>
+        <?php echo $__env->make('laravel-bootstrap::partials.messaging', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+        <?php echo $__env->yieldContent('form-items'); ?>
+
+        <?php echo Form::submit('Create Item' , array('class'=>'btn btn-large btn-primary pull-right')); ?>
+
+    <?php echo Form::close(); ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('laravel-bootstrap::layouts.interface', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

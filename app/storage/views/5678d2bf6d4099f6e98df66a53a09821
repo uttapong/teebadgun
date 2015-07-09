@@ -1,0 +1,32 @@
+
+<?php $__env->startSection('title'); ?>
+    Edit Post: <?php echo $item->title; ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('heading'); ?>
+    <h1>Edit Post: <small><?php echo $item->title; ?></small></h1>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('form-items'); ?>
+
+    <div class="form-group">
+        <?php echo Form::label( "title" , 'Post Title' , array( 'class'=>'col-lg-2 control-label' ) ); ?>
+        <div class="col-lg-10">
+            <?php echo Form::text( "title" , Input::old( "title" , $item->title ) , array( 'class'=>'form-control' , 'placeholder'=>'Post Title' ) ); ?>
+        </div>
+    </div>
+    <div class="form-group">
+        <?php echo Form::label( "category" , 'Category' , array( 'class'=>'col-lg-2 control-label' ) ); ?>
+        <div class="col-lg-10">
+            <?php echo Form::select('category', array('news' => 'News', 'article' => 'Article','announcement'=>'Announcement'), Input::old( "category" , $item->category ),array( 'class'=>'form-control'  ));; ?>
+        </div>
+    </div>
+    <div class="form-group">
+        <?php echo Form::label( "content" , 'Post Content' , array( 'class'=>'col-lg-2 control-label' ) ); ?>
+        <div class="col-lg-10">
+            <?php echo Form::textarea( "content" , Input::old( "content" , $item->content ) , array( 'class'=>'form-control rich' , 'placeholder'=>'Post Content' ) ); ?>
+        </div>
+    </div>
+    
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('laravel-bootstrap::layouts.interface-edit', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

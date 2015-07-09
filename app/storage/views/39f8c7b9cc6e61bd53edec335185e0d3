@@ -1,0 +1,151 @@
+<?php $__env->startSection('title'); ?>
+Teebadgun.com : <?php echo $gym->name; ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=th&libraries=places"></script>
+<script>
+var map;
+function initialize() {
+  var gympos=new google.maps.LatLng(<?php echo $gym->lat; ?>, <?php echo $gym->long; ?>);
+  var mapOptions = {
+    zoom: 12,
+    center: gympos
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+  var marker = new google.maps.Marker({
+      position: gympos,
+      map: map,
+      title: '<?php echo $gym->name; ?>'
+  });
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+function shareFB(link,court_name){
+  FB.ui({
+    method: 'feed',
+    //link: 'https://developers.facebook.com/docs/dialogs/',
+    link: link,
+    caption: 'มาตีแบดที่ทีม '+court_name+" กัน",
+  }, function(response){});
+}
+
+function confirmReport(){
+  bootbox.confirm("ท่านแน่ใจหรือว่าต้องการแจ้งคอร์ทแบดมินตันซ้ำ?", function(result) {
+    if(result){
+      location.href='<?php echo route('gymreport',array($gym->id)); ?>';
+    }
+  }); 
+
+}
+function confirmRemove(){
+  bootbox.confirm("ท่านแน่ใจหรือว่าต้องการลบคอร์ทแบดมินตัน?", function(result) {
+    if(result){
+      location.href='<?php echo route('gymremove',array($gym->id)); ?>';
+    }
+  }); 
+}
+    </script>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('style'); ?>
+<style>
+.well{
+  margin:0px 20px 5px 0px  !important;
+  padding:10px !important;
+}
+#map-canvas {
+      width: 100%;
+        min-height:400px;
+        margin: 0px;
+        padding: 0px
+      }
+</style>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+
+<div class="row">
+<?php if(Session::has('message')): ?>
+    <?php echo Session::get('message'); ?>
+<?php endif; ?>
+  <div class="col-md-12 profile-header">
+    
+
+    <div class='row'>
+        <div class="col-md-3 left">
+          <h1>ชื่อคอร์ท: <?php echo $gym->name; ?></h1>
+          <div class='court-info'>
+          <p>ประเภทคอร์ท: <?php echo $gym->courtType->name; ?></p>
+          <p>เปิดทำการวัน: <?php echo $gym->open_day; ?></p>
+          <p>เวลา: <?php echo $gym->open_time; ?> - <?php echo $gym->close_time; ?></p>
+          <p>จำนวนคอร์ท:  <?php echo $gym->court_count; ?></p>
+          <p>
+          <?php if($gym->checkPermission()): ?>
+            <a href="<?php echo route('gymedit',array($gym->id)); ?>" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-edit"></span> แก้ไขข้อมูลสนาม</a>
+           <button onclick="confirmRemove()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-ban-circle"></span> ลบสนาม</button>
+            <?php endif; ?>
+             <button onclick="confirmReport()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-bullhorn"></span> แจ้งซ้ำ</button>
+            </p>
+            </div>
+        </div>
+        <div class="col-md-3 left">
+          <h2>ทีมที่เปิดที่นี่</h2>
+          <?php foreach($gym->opendays as $openday): ?>
+         
+            <div class='team-icon'><a href='<?php echo route('team',array($openday->team)); ?>'>
+            <p>
+            
+            <?php if(Team::find($openday->team)->logo): ?>
+                      <img src="<?php echo asset('uploads/teams/'); ?>/<?php echo Team::find($openday->team)->id; ?>/<?php echo Team::find($openday->team)->logo; ?>" class='team-logo-icon'/>
+                    <?php else: ?>
+                      <img src="<?php echo asset('assets/images/unknow.png'); ?>" class='team-logo-icon'/>
+                    <?php endif; ?>
+            
+            <h5><?php echo Team::find($openday->team)->name; ?></h5> <span class='label label-danger day'><?php echo $openday->getDay(); ?></span></p>
+            </a></div>
+          <?php endforeach; ?>
+        </div>
+        <div class="col-md-3 left">
+          <h2>ข้อมูลติดต่อ</h2>
+           <p>ที่อยู่: <?php echo $gym->address; ?></p>
+          <p>ชื่อผู้ติดต่อ: <?php echo $gym->contact_person; ?></p>
+          <p>โทร: <?php echo $gym->tel; ?></p>
+        </div>
+        <div class="col-md-3 left">
+          
+            <h2>เพิ่มโดย</h2>
+            <div class='well'>
+            <div class="media">
+              <a class="pull-left" href="<?php echo route('profile',array($gym->user->username)); ?>">
+                 <?php if($gym->user->picture): ?>
+                <img style="width:50px" class="media-object" src="<?php echo $gym->user->picture; ?>" alt="...">
+                <?php else: ?>
+                <img style="width:50px" src="<?php echo asset('assets/images/guest.jpg');; ?>"  />
+                <?php endif; ?>
+              </a>
+              <div class="media-body">
+                <h2 style="margin:0px;"><?php echo $gym->user->username; ?></h2>
+                <h5 class="media-heading"><?php echo $gym->user->firstname; ?> <?php echo $gym->user->lastname; ?></h5>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+    </div>
+  
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 left">
+  <h1>แผนที่</h1>
+  <div id="map-canvas"></div>
+  </div>
+</div>
+
+
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

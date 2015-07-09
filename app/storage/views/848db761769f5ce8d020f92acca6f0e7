@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><?php echo $__env->yieldContent('title'); ?> | Wardrobe</title>
+  <meta name="env" content="<?php echo App::environment(); ?>">
+  <meta name="token" content="<?php echo Session::token(); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="<?php echo asset(wardrobe_path('admin/style.css')); ?>">
+</head>
+<body>
+  <div id="header-region"></div>
+  <div id="js-alert"></div>
+  <div class="container">
+    <div class="row">
+      <?php echo $__env->yieldContent('content'); ?>
+      <div id="main-region" class="col-md-12"></div>
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="<?php echo asset(wardrobe_path('admin/js/jquery.js')); ?> "><\/script>')</script>
+  <script type="text/javascript" src="<?php echo asset(wardrobe_path('admin/js/structure.js')); ?>"></script>
+  <script type="text/javascript" src="<?php echo asset(wardrobe_path('admin/js/app.js')); ?>"></script>
+  <?php echo $__env->yieldContent('footer.js'); ?>
+</body>
+</html>

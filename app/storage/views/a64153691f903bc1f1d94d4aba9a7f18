@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title><?php echo $__env->yieldContent('title'); ?></title>
+
+        <!-- Bootstrap core CSS -->
+        <?php $__env->startSection('css'); ?>
+            <link rel="stylesheet" href="<?php echo asset('packages/davzie/laravel-bootstrap/css/bootstrap.min.css'); ?>">
+            <link rel="stylesheet" href="<?php echo asset('packages/davzie/laravel-bootstrap/css/styles.css'); ?>">
+            <link rel="stylesheet" href="<?php echo asset('packages/davzie/laravel-bootstrap/css/jquery.tagsinput.min.css'); ?>">
+            <link rel="stylesheet" href="<?php echo asset('packages/davzie/laravel-bootstrap/css/redactor.css'); ?>">
+        <?php echo $__env->yieldSection(); ?>
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body class="interface">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <?php /*  The Responsive Menu Button  */ ?>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <?php /*  The CMS Home Button  */ ?>
+                    <a class="navbar-brand" href="<?php echo url( $urlSegment ); ?>"><?php echo $app_name; ?></a>
+                </div>
+
+                <?php /*  The menu items at the top (collapses down when browser gets small)  */ ?>
+                <div class="collapse navbar-left navbar-collapse">
+                    <?php if($menu_items): ?>
+                        <ul class="nav navbar-nav">
+                            <?php foreach($menu_items as $url=>$item): ?>
+                                <?php if( $item['top'] ): ?>
+                                    <li class="<?php echo Request::is( "$urlSegment/$url*" ) ? 'active' : ''; ?>">
+                                        <a href="<?php echo url( $urlSegment.'/'.$url ); ?>"><?php echo $item['name']; ?></a>
+                                    </li>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                            <li><a href="<?php echo url( $urlSegment.'/logout' ); ?>"><strong>Logout</strong></a></li>
+                        </ul>
+                    <?php endif; ?>
+                </div><!-- /.nav-collapse -->
+
+            </div><!-- /.container -->
+
+        </div><!-- /.navbar -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-3">
+
+                    <?php if($menu_items): ?>
+                        <div class="list-group">
+                            <?php foreach($menu_items as $url=>$item): ?>
+                                <a class="list-group-item <?php echo Request::is( "$urlSegment/$url*" ) ? 'active' : ''; ?>" href="<?php echo url( $urlSegment.'/'.$url ); ?>">
+                                    <span class="glyphicon glyphicon-<?php echo $item['icon']; ?>"></span> <?php echo $item['name']; ?>
+                                </a>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
+
+                </div>
+                <div class="col-sm-9">
+                    <?php echo $__env->yieldContent('content'); ?>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <hr>
+            <footer>
+                <p>&copy; <?php echo $app_name; ?> <?php echo date('Y'); ?></p>
+            </footer>
+        </div><!--/.container-->
+
+
+        <?php $__env->startSection('scripts'); ?>
+            <script src="<?php echo asset('packages/davzie/laravel-bootstrap/js/jquery.js'); ?>"></script>
+            <script src="<?php echo asset('packages/davzie/laravel-bootstrap/js/bootstrap.min.js'); ?>"></script>
+            <script src="<?php echo asset('packages/davzie/laravel-bootstrap/js/jquery.tagsinput.min.js'); ?>"></script>
+            <script src="<?php echo asset('packages/davzie/laravel-bootstrap/js/redactor.min.js'); ?>"></script>
+            <script>
+                $(document).ready(function(){
+                    var taggables = $('input[name="tags"]');
+                    var richText = $('textarea.rich');
+
+                    if( taggables.length )
+                        $(taggables).tagsInput({});
+                    
+                    if( richText.length )
+                        $(richText).redactor();
+
+                });
+            </script>
+        <?php echo $__env->yieldSection(); ?>
+    </body>
+</html>

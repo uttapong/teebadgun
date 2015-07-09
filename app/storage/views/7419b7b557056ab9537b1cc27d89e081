@@ -1,0 +1,126 @@
+<?php $__env->startSection('title'); ?>
+Teebadgun.com : <?php echo $user->firstname; ?> <?php echo $user->lastname; ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+<script>
+function showBadge(id,name,desc){
+
+  var content="<div class='userbadge'>"+
+  "<img src='<?php echo route('home'); ?>assets/images/badge/"+id+".png' />"+
+  "<h2>เหรียญ '"+name+"'</h2>"+
+  "<p>"+desc+"</p>"+
+  "</div>";
+  bootbox.alert(content, function() {
+  });
+}
+
+
+</script>
+
+<style>
+body{
+height:100vh;
+
+background-image:url('<?php echo url('/'); ?>/assets/images/profile_hd1.jpg') !important;
+background-position:left top;
+}
+</style>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('style'); ?>
+
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+
+<div class="row">
+  <div class="col-md-12" style="margin-top: 80px;">
+  <div class='row'>
+        <div class="col-md-3 left">
+          
+          <?php if($user->picture): ?>
+          <div class="profile-circular" style="background-image:url('<?php echo $user->picture; ?>');">
+          </div>
+          
+          <?php else: ?>
+           <div class="profile-circular" style="background-image:url('<?php echo asset('assets/images/guest.jpg');; ?>');"></div>
+         
+          <?php endif; ?>
+          
+        </div>
+        <div class="col-md-6 left">
+            <h1 style="font-size: 4rem;"><?php echo $user->firstname; ?> <?php echo $user->lastname; ?></h1>
+           <p><?php echo $user->signature; ?></p>
+           <ul style="list-style-type:none;padding: 0px ;">
+            <li><span class="glyphicon glyphicon-map-marker"></span>จังหวัด <?php if($user->province()): ?>  <?php echo $user->province()->name; ?> <?php else: ?> - <?php endif; ?></li>
+            
+          </ul>
+          <p>
+            <?php if($user->flag_racket&&$user->gear_racket): ?>
+            <div class="gear-circular" style="background-image:url('<?php echo asset('uploads/gears/racket'); ?>/<?php echo $user->id; ?>/<?php echo $user->gear_racket; ?>');"></div>
+            <?php else: ?>
+            <div class="gear-circular" style="background-image:url('<?php echo asset('assets/images/gear_racket.jpg'); ?>');"></div>
+            <?php endif; ?>
+
+            <?php if($user->flag_string&&$user->gear_string): ?>
+            <div class="gear-circular" style="background-image:url('<?php echo asset('uploads/gears/string'); ?>/<?php echo $user->id; ?>/<?php echo $user->gear_string; ?>');"></div>
+            <?php else: ?>
+            <div class="gear-circular" style="background-image:url('<?php echo asset('assets/images/gear_string.jpg'); ?>');"></div>
+            <?php endif; ?>
+
+            <?php if($user->flag_shoes&&$user->gear_shoes): ?>
+            <div class="gear-circular" style="background-image:url('<?php echo asset('uploads/gears/shoes'); ?>/<?php echo $user->id; ?>/<?php echo $user->gear_shoes; ?>');"></div>
+            <?php else: ?>
+            <div class="gear-circular" style="background-image:url('<?php echo asset('assets/images/gear_shoes.jpg'); ?>');"></div>
+            <?php endif; ?>
+
+            <?php if($user->flag_bag&&$user->gear_bag): ?>
+            <div class="gear-circular" style="background-image:url('<?php echo asset('uploads/gears/bag'); ?>/<?php echo $user->id; ?>/<?php echo $user->gear_bag; ?>');"></div>
+            <?php else: ?>
+            <div class="gear-circular" style="background-image:url('<?php echo asset('assets/images/gear_bag.jpg'); ?>');"></div>
+            <?php endif; ?>
+
+
+           
+          </p>
+           
+        </div>
+        <div class="col-md-3 left">
+          <h2>สังกัดทีม</h2>
+           <?php foreach($user->teams as $team): ?>
+            <div class='team-icon'><a href='<?php echo route('team',array($team->team->id,$team->team->name)); ?>'>
+            <p>
+            <?php if($team->team->logo): ?>
+                      <img src="<?php echo asset('uploads/teams/'); ?>/<?php echo $team->team->id; ?>/<?php echo $team->team->logo; ?>" class='team-logo-icon'/>
+                    <?php else: ?>
+                      <img src="<?php echo asset('assets/images/unknow.png'); ?>" class='team-logo-icon'/>
+                    <?php endif; ?>
+            <h5><?php echo $team->team->name; ?></h5></p>
+            </a></div>
+          <?php endforeach; ?>
+           <h2>เหรียญรางวัล</h2>
+           <?php foreach($user->userbadges as $userbadge): ?>
+            <div class='badge-icon'><a href='javascript:void(0);' onclick='showBadge(<?php echo $userbadge->badge->id; ?>,"<?php echo $userbadge->badge->name; ?>","<?php echo $userbadge->badge->desc; ?>")'>
+            <p><img src='<?php echo asset('assets/images/badge/'.$userbadge->badge->id.'.png'); ?>' alt="<?php echo $userbadge->badge->name; ?>"/></p>
+            </a></div>
+          <?php endforeach; ?>
+        </div>
+    </div>
+  
+  </div>
+  <div class="col-md-12 " style="margin-top: 0px;">
+    <div class="arrow-up"></div>
+    <div class="profile-meta">
+      
+       <?php if($user->fb_id): ?>
+             <a href="<?php echo $user->link; ?>" target='_blank' class='btn btn-primary btn-xs' ><i class="fa fa-share-alt-square fa-lg"></i> Facebook Connect</a>
+            <?php else: ?>
+            <?php endif; ?>
+       <a href="mailto:<?php echo $user->email; ?>" class='btn btn-success btn-xs' ><i class="fa fa-paper-plane-o fa-lg"></i> ส่งอีเมล์</a>
+       <div class="fb-share-button" data-href="<?php echo Request::url(); ?>" data-type="button"></div>
+  </div>
+</div>
+
+
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

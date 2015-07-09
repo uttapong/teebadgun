@@ -1,0 +1,16 @@
+
+<?php $__env->startSection('title'); ?>
+	<?php echo site_title(); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+	<section class="home">
+		<?php foreach ($posts as $post): ?>
+			<?php echo $__env->make(theme_view('inc.post'), array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+		<?php endforeach; ?>
+
+		<?php echo $posts->links(); ?>
+	</section>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make(theme_view('layout'), array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

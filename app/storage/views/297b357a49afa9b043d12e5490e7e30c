@@ -1,0 +1,92 @@
+<?php $__env->startSection('title'); ?>
+Teebadgun.com : <?php echo $news->title; ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('og'); ?>
+<?php if($news->filename()): ?>
+		
+<meta property="og:image" content="<?php echo $news->getoriginalfile(); ?>" /> 
+<?php endif; ?>
+
+<meta property="og:url" content="<?php echo Request::url(); ?>" /> 
+<meta property="og:title" content="<?php echo $news->title; ?>" />
+<meta property="og:description" content="<?php echo $news->shorten(); ?>" />
+
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('script'); ?>
+<script src="http://twitter.github.com/hogan.js/builds/2.0.0/hogan-2.0.0.js"></script>
+<script>
+
+</script>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('style'); ?>
+<style>
+
+</style>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+<a name="head" ></a>
+<div class="row">
+
+	<div class="col-md-12 left">
+		<div class="row">
+        <div class="col-md-12 left">
+         <?php if(Session::has('message')): ?>
+                        <?php echo Session::get('message'); ?>
+                    
+            <?php endif; ?>
+        	<h1><?php echo stripslashes($news->title); ?></h1>
+        	<p><a class="btn btn-info btn-large" href="<?php echo route('home'); ?>/<?php echo $route; ?>"><i class="fa fa-reply fa-lg"></i> กลับสู่หน้าหลัก</a> <div class="fb-share-button" data-href="<?php echo route('news',array($news->slug)); ?>" data-width="200" data-type="button_count"></div></p>
+            <?php if($news->filename()): ?>
+			<img  src="<?php echo $news->getoriginalfile(); ?>" style="max-width: 50%;float: right;margin: 0px 0px 15px 25px;" />
+			<?php endif; ?>
+            <p><?php echo stripslashes($news->content); ?></p>
+            <hr />
+
+            <div class="well" style='clear:both;'>
+            <?php foreach($news->comments as $comment): ?>
+            <div class='well'>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img style="width:80px" class="media-object" src="<?php echo User::find($comment->author)->picture; ?>" alt="...">
+              </a>
+              <div class="media-body">
+                <h5 class="media-heading"><?php echo User::find($comment->author)->username; ?></h5>
+                <?php echo $comment->body; ?>
+                <br /><br />
+                <span class='post-meta label label-default'>โพสต์เมื่อ <?php echo $comment->created_at; ?></span>
+              </div>
+            </div>
+            </div>
+            <?php endforeach; ?>
+             <?php if (Auth::user()): ?>
+            <form method='post' action="<?php echo route('addcomment',array($news->id)); ?>" id='addcomment' role='form' class='form-horizontal'>
+            
+            <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">เพิ่มความคิดเห็น</label>
+                            <div class="col-sm-8">
+                              <textarea class="form-control" rows="4" name="comment"></textarea>
+                            </div>
+                            <button type="submit" class='btn btn-lg btn-info'>บันทึก</button>
+                          </div>
+           </form>
+            <?php else: ?>
+                <div class="row" >
+                  <div class=" col-md-12 left">
+                    <div class='alert alert-danger'><span class='glyphicon glyphicon-exclamation-sign'></span> <strong>ท่านยังไม่ได้ล๊อคอิน</strong>  กรุณาล๊อคอิน 
+                    <a href="<?php echo route('login'); ?>" class='btn btn-info btn-xs' ><i class="fa fa-unlock-alt"></i> ที่นี่</a> ก่อนเพื่อตอบกระทู้</div>
+                  </div>
+                </div>
+              <?php endif; ?>
+            </div>
+            <a class="btn btn-default btn-large" href="#head"><i class="fa fa-arrow-circle-up fa-lg"></i> ขึ้นบนสุด</a>
+
+        </div>
+	</div>
+	</div>
+</div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

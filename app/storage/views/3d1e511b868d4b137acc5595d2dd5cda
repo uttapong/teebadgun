@@ -1,0 +1,9 @@
+
+<?php $__env->startSection('main'); ?>
+
+	<h2>Installation successful</h2>
+	<p>You can now <a href="<?php echo route('index'); ?>">visit your forum index</a>.</p>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('fluxbb_installer::layout.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

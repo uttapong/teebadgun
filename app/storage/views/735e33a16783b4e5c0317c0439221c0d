@@ -1,0 +1,57 @@
+<?php $__env->startSection('title'); ?>
+Teebadgun.com : เพิ่มสนามแบดมินตัน
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+<script src="http://twitter.github.com/hogan.js/builds/2.0.0/hogan-2.0.0.js"></script>
+<script>
+
+</script>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('style'); ?>
+<style>
+
+</style>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+
+<div class="row">
+
+
+	<div class="col-md-12 left">
+		<div class="row headline">
+			<?php foreach($news_latest as $news): ?>
+				<div class="col-md-4 left block">
+				<h2><?php echo $news->title; ?></h2>
+				<?php if($news->filename()): ?>
+
+				<img style="width: 100%" src="<?php echo $news->getfile(); ?>" />
+				<?php else: ?>
+				<img style="width: 100%" src="<?php echo asset('assets/images/headline.jpg');; ?>" />
+				<?php endif; ?>
+				<p><?php echo $news->shorten(); ?> <a href='<?php echo route('news',array($news->slug)); ?>' class="btn btn-info btn-xs">อ่านต่อ <i class="fa fa-chevron-circle-right fa-lg"></i></a></p>
+				</div>
+			<?php endforeach; ?>
+			
+		</div>
+	</div>
+	<div class="col-md-12 left">
+		<div class="row">
+        <div class="col-md-12 left">
+        	<h2 class="title">บทความแบดมินตัน</h2>
+            <div class="news-list">
+                <ul>
+                	<?php foreach($news_all as $news): ?>
+                    <li><a href="<?php echo route('news',array($news->slug)); ?>" ><i class="fa fa-arrow-circle-right fa-lg"></i> <?php echo $news->title; ?></a></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+            <?php echo $news_all->links();; ?>
+        </div>
+        
+		
+	</div>
+	</div>
+</div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

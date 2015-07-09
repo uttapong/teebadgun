@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Users/winnie/Documents/htdocs/laravel"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/BSI/Documents/htdocs/laravel"
+		}
+	]
+}
