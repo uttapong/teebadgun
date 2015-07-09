@@ -1,4 +1,4 @@
-## Teebadgun Social App
+## Teebadgun Badminton Social App
 
 Version: b0.9 
 
